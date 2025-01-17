@@ -6,13 +6,11 @@ import typer
 from src.service import jira_factory
 
 app = typer.Typer()
-
+_jira = jira_factory.create()
 
 
 @app.command()
 def create(summary: str, description: str, date: str = None):
-    jira = jira_factory.create()
-
     # Call the method
     if date is None:
         date = datetime.now(pytz.utc) + timedelta(weeks=1)
@@ -23,10 +21,13 @@ def create(summary: str, description: str, date: str = None):
         "issuetype": {"name": "Task"},
         "duedate": date.strftime("%Y-%m-%d"),
     }
-    return jira.create_issue(fields=issue_dict)
+    return _jira.create_issue(fields=issue_dict)
+
+
 @app.command()
-def get_issue(name: str):
-    print(f"Hello {name}")
+def issue(id: str):
+    issue = _jira.issue(id)
+    print(issue)
 
 
 @app.command()

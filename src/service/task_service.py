@@ -7,7 +7,9 @@ class TaskService:
     def __init__(self, jira: JIRA):
         self.jira = jira
 
-    def create_task(self, project_key: str, summary: str, description: str, date: datetime = None):
+    def create_task(
+        self, project_key: str, summary: str, description: str, date: datetime = None
+    ):
         if date is None:
             date = datetime.now(pytz.utc) + timedelta(weeks=1)
         issue_dict = {
