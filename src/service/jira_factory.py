@@ -1,6 +1,6 @@
 from jira import JIRA
 
-from configuration import Settings
+from src.lib.configuration import Settings
 
 _settings = Settings()
 _jira = JIRA(

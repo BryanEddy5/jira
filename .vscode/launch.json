@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug my-items",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/cli/entry.py",
+            "console": "integratedTerminal",
+            "args": ["health-check"],
+            "justMyCode": true
+        }
+    ]
+}
