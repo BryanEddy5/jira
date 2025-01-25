@@ -101,8 +101,6 @@ def analyze_teams(
     # Set date range
     def prev_weekday(date: datetime, weekday: int = 0):
         days_ahead = weekday - date.weekday()
-        if days_ahead <= 0:  # Target day already happened this week
-            days_ahead -= 7
         return date + timedelta(days_ahead)
 
     start_date = prev_weekday(start_date, 0)
@@ -122,11 +120,13 @@ def analyze_teams(
         df, str(output_path / "team_composition.html")
     )
     _task_service.analyze_weekly_trends(df, str(output_path / "weekly_trends.html"))
+    _task_service.write_to_csv(df)
 
     print(f"\nAnalysis complete! Visualization files have been saved to: {output_path}")
     print("\nGenerated files:")
     print(f"- {output_path}/team_composition.html (Overall team composition)")
     print(f"- {output_path}/weekly_trends.html (Weekly trends by team)")
+    print(f"- {output_path}/engineering_taxonomy.csv (Raw data)")
 
 
 @app.command("list-teams")

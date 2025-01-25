@@ -34,6 +34,32 @@ class TaskService:
 
         return sorted(list(project))
 
+    def _fetch_issues(self, jql: str) -> list[JIRA.issue]:
+        """Fetch issues from Jira using the provided JQL query."""
+        pos = 0
+        batch = 100  # 100 is the max batch size Jira will return results for
+        issues_all = []
+        while True:
+            issues_batch = self.jira.search_issues(
+                jql,
+                startAt=pos,
+                maxResults=batch,
+                fields=[
+                    "key",
+                    "project",
+                    "issuetype",
+                    "resolutiondate",
+                    "status",
+                    self.engineering_work_taxonomy,
+                ],
+            )
+            if issues_batch == []:
+                break
+            else:
+                issues_all += issues_batch
+            pos += len(issues_batch)
+        return issues_all
+
     def get_engineering_taxonomy(
         self, start_date: datetime, end_date: datetime, projects: List[str] = None
     ) -> pl.DataFrame:
@@ -52,49 +78,39 @@ class TaskService:
             projects = self.get_all_projects()
 
         all_data = []
-        for project in projects:
-            jql = (
-                f'category = "Core Connectivity" '
-                f'AND resolved >= "{start_date.strftime("%Y-%m-%d")}" '
-                f'AND resolved <= "{end_date.strftime("%Y-%m-%d")}" '
-                "ORDER BY resolved DESC"
+
+        jql = (
+            f'category = "Core Connectivity" '
+            f'AND resolved >= "{start_date.strftime("%Y-%m-%d")}" '
+            f'AND resolved <= "{end_date.strftime("%Y-%m-%d")}" '
+            'AND type not in (Epic, Initiative) and status != "Won\'t Do"'
+            'AND project != "Core Connectivity Intake"'
+        )
+
+        issues = self._fetch_issues(jql)
+
+        for issue in issues:
+            category = getattr(
+                issue.fields, self.engineering_work_taxonomy, "Uncategorized"
+            )
+            all_data.append(
+                {
+                    "project": issue.fields.project.name,
+                    "issue_key": issue.key,
+                    "category": str(category),
+                    "resolved": issue.fields.resolutiondate,
+                    "type": issue.fields.issuetype.name,
+                    "url": issue.self,
+                }
             )
 
-            issues = self.jira.search_issues(
-                jql,
-                maxResults=1000,
-                fields=[
-                    "summary",
-                    "resolved",
-                    "issuetype",
-                    self.engineering_work_taxonomy,
-                    "project",
-                    "key",
-                    "resolutiondate"
-                ],
-            )
-
-            for issue in issues:
-                category = getattr(
-                    issue.fields, self.engineering_work_taxonomy, "Uncategorized"
-                )
-                all_data.append(
-                    {
-                        "project": issue.fields.project.name,
-                        "issue_key": issue.key,
-                        "category": str(category),
-                        "resolved": issue.fields.resolutiondate,
-                        "type": issue.fields.issuetype.name,
-                        "url": issue.self,
-                    }
-                )
+        print(f"Retrieved {len(all_data)} issues")
 
         # Convert to DataFrame for easier analysis
         df = pl.DataFrame(all_data)
         if not df.is_empty():
             df = df.with_columns(
                 [
-                    pl.col("resolved").str.strptime(pl.Datetime),
                     pl.col("resolved")
                     .str.strptime(pl.Datetime)
                     .dt.week()
@@ -102,7 +118,7 @@ class TaskService:
                 ]
             )
 
-        return df
+        return df.unique()
 
     def visualize_project_composition(
         self, df: pl.DataFrame, output_path: str = "project_composition.html"
@@ -117,33 +133,54 @@ class TaskService:
         if df.is_empty():
             raise ValueError("No data available for visualization")
 
+        df = df.clone()
+
         # Calculate composition percentages
         composition = (
-            df.groupby(["project", "category",])
-            .agg(pl.count().alias("count"))
-            .join(df.groupby("project").agg(pl.count().alias("count_total")), on="project")
-            .with_columns(
-                (pl.col("count") / pl.col("count_total") * 100).round().alias("percentage")
+            df.groupby(
+                [
+                    "project",
+                    "category",
+                    "week"
+                ]
             )
-        )
+            .agg(pl.count().alias("count"))
+            .join(
+                df.groupby(["project", "week"]).agg(pl.count().alias("count_total")), on=["project", "week"]
+            )
+            .with_columns(
+                (pl.col("count") / pl.col("count_total") * 100)
+                .round()
+                .alias("percentage")
+            )
+        ).sort("week")
 
         # Create stacked bar chart
-        fig = px.bar(
-            composition,
-            x="project",
-            y="percentage",
-            color="category",
-            title="Engineering Work Taxonomy by project",
-            labels={
-                "percentage": "Percentage of Work",
-                "category": "Work Category",
-            },
-            height=600,
-            barmode="stack",
-            text="percentage",
-            color_discrete_sequence=px.colors.qualitative.Prism,
+        fig = (
+            px.bar(
+                composition,
+                x="project",
+                y="percentage",
+                color="category",
+                title="Engineering Work Taxonomy by project",
+                facet_col="week",
+                facet_col_wrap=1,
+                labels={
+                    "percentage": "Percentage of Work",
+                    "category": "Work Category",
+                    "project": "Project",
+                    "Week": "Week",
+                },
+                barmode="stack",
+                height=2000,
+                text="percentage",
+                color_discrete_sequence=px.colors.qualitative.Prism,
+            )
+            .update_layout(legend_traceorder="reversed")
+            .update_traces(texttemplate="%{text:.0f}%", textposition="inside")
+            .for_each_xaxis(lambda x: x.update(showticklabels=True))
+
         )
-        fig.update_layout(legend_traceorder="reversed")
 
         fig.write_html(output_path)
 
@@ -160,24 +197,46 @@ class TaskService:
         if df.is_empty():
             raise ValueError("No data available for visualization")
 
-        weekly_composition = df.groupby(["week", "project", "category"]).agg(
-            pl.count().alias("count")
-        )
+        df = df.clone()
+
+        composition = (
+            df.groupby(
+                [
+                    "week",
+                    "category",
+                ]
+            )
+            .agg(pl.count().alias("count"))
+            .join(df.groupby("week").agg(pl.count().alias("count_total")), on="week")
+            .with_columns(
+                (pl.col("count") / pl.col("count_total") * 100)
+                .round()
+                .alias("percentage")
+            )
+        ).sort("week")
 
         fig = px.line(
-            weekly_composition,
+            composition,
             x="week",
-            y="count",
+            y="percentage",
             color="category",
-            facet_col="project",
             facet_col_wrap=2,
-            title="Weekly Work Composition Trends by Project",
+            title="Weekly Work Composition Trends",
             labels={
-                "count": "Number of Issues",
+                "percentage": "Percentage of Issues",
                 "week": "Week",
                 "category": "Work Category",
             },
+            text="percentage",
             height=800,
-        )
+        ).update_traces(texttemplate="%{text:.0f}%")
 
         fig.write_html(output_path)
+
+    def write_to_csv(
+        self,
+        df: pl.DataFrame,
+        output_path: str = "analysis_output/engineering_taxonomy.csv",
+    ) -> None:
+        """Write DataFrame to CSV file."""
+        df.write_csv(output_path)

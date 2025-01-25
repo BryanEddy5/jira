@@ -16,7 +16,7 @@
             "request": "launch",
             "program": "${workspaceFolder}/src/cli/entry.py",
             "console": "integratedTerminal",
-            "args": ["analyze-teams"],
+            "args": ["analyze-teams","--start-date=2025-01-01"],
             "justMyCode": true
         }
     ]
