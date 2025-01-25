@@ -3,7 +3,7 @@ from src.service import jira_factory
 from jira import JIRA, Issue
 
 
-def test_create_jira_instance():
+def test_create_jira_ticket():
     # Define test parameters
     jira = jira_factory.create()
 
@@ -22,5 +22,5 @@ def test_create_jira_instance():
     assert isinstance(new_issue, Issue)
     assert new_issue.key == issue.key
     assert isinstance(issue, Issue)
-
+    assert issue.fields.issuetype.name == "Task"
     issue.delete()

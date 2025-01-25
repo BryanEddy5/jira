@@ -1,5 +1,11 @@
 {
     "python.testing.pytestArgs": ["tests"],
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    "python.analysis.extraPaths": ["./src"],
+    "python.defaultInterpreterPath": "/Users/bryaneddy/Library/Caches/pypoetry/virtualenvs/jira-automation-iCfpME8d-py3.11"
 }
