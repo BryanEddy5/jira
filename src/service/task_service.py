@@ -137,16 +137,11 @@ class TaskService:
 
         # Calculate composition percentages
         composition = (
-            df.groupby(
-                [
-                    "project",
-                    "category",
-                    "week"
-                ]
-            )
+            df.groupby(["project", "category", "week"])
             .agg(pl.count().alias("count"))
             .join(
-                df.groupby(["project", "week"]).agg(pl.count().alias("count_total")), on=["project", "week"]
+                df.groupby(["project", "week"]).agg(pl.count().alias("count_total")),
+                on=["project", "week"],
             )
             .with_columns(
                 (pl.col("count") / pl.col("count_total") * 100)
@@ -179,7 +174,6 @@ class TaskService:
             .update_layout(legend_traceorder="reversed")
             .update_traces(texttemplate="%{text:.0f}%", textposition="inside")
             .for_each_xaxis(lambda x: x.update(showticklabels=True))
-
         )
 
         fig.write_html(output_path)
@@ -215,21 +209,23 @@ class TaskService:
             )
         ).sort("week")
 
-        fig = px.line(
-            composition,
-            x="week",
-            y="percentage",
-            color="category",
-            facet_col_wrap=2,
-            title="Weekly Work Composition Trends",
-            labels={
-                "percentage": "Percentage of Issues",
-                "week": "Week",
-                "category": "Work Category",
-            },
-            text="percentage",
-            height=800,
-        ).update_traces(texttemplate="%{text:.0f}%")
+        fig = (
+            px.line(
+                composition,
+                x="week",
+                y="percentage",
+                color="category",
+                facet_col_wrap=2,
+                title="Weekly Work Composition Trends",
+                labels={
+                    "percentage": "Percentage of Issues",
+                    "week": "Week",
+                    "category": "Work Category",
+                },
+                text="percentage",
+                height=800,
+            ).update_traces(texttemplate="%{text:.0f}%")
+        ).update_xaxes(type="category")
 
         fig.write_html(output_path)
 
