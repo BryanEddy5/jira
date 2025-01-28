@@ -1,11 +1,13 @@
-from typer.testing import CliRunner
 import pytest
+from typer.testing import CliRunner
+
 from src.adapters.primary.cli.entry import app
 
 runner = CliRunner()
 
+
 @pytest.mark.integration
-def test_health_check():
+def test_health_check() -> None:
     """Test the 'jira health-check' command."""
     # Execute command
     result = runner.invoke(app, ["jira", "health-check"], catch_exceptions=False)
@@ -18,13 +20,15 @@ def test_health_check():
 
 
 @pytest.mark.integration
-def test_get_issue():
+def test_get_issue() -> None:
     """Test the 'jira get-issue' command."""
     issue_key = "ATP-1708"
     issue_summary = "Fix PO Box format"
 
     # Execute command
-    result = runner.invoke(app, ["jira", "get-issue", issue_key], catch_exceptions=False)
+    result = runner.invoke(
+        app, ["jira", "get-issue", issue_key], catch_exceptions=False,
+    )
 
     # Check exit code
     assert result.exit_code == 0
