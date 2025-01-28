@@ -37,13 +37,14 @@ def get_all_projects() -> None:
     """Get list of all projects from Jira."""
     projects = _task_service.get_all_projects()
     for _project in projects:
-        pass
+        print(_project.key)
 
 
 @jira_app.command()
 def get_issue(id: str) -> None:
     """Get details of a specific JIRA issue."""
-    _task_service.get_issue(id)
+    issue = _task_service.get_issue(id)
+    print(issue.key, issue.summary)
 
 
 @jira_app.command()
@@ -52,6 +53,7 @@ def rm(ids: list[str]) -> None:
     for id in ids:
         issue = _jira.issue(id)
         if issue:
+            print(f"Deleted issue {id}")
             issue.delete()
 
 
@@ -60,7 +62,7 @@ def query(jql: str) -> None:
     """Query JIRA issues using JQL."""
     issues = _jira.search_issues(jql)
     for _issue in issues:
-        pass
+        print(_issue.key, _issue.fields.summary)
 
 
 @jira_app.command()
@@ -72,3 +74,4 @@ def my_items() -> None:
 @jira_app.command()
 def health_check() -> None:
     """Check if JIRA API is accessible."""
+    print(f"JIRA API is accessible. {_jira.jira.server_url}")

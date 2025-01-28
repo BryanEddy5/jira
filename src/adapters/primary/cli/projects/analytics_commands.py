@@ -64,6 +64,12 @@ def analyze_teams(
     _team_analysis.visualize_project_lead_time(analytics, lead_time)
     _team_analysis.write_to_csv(analytics)
 
+    print(f"\nAnalysis complete! Visualization files have been saved to: {output_path}")
+    print("\nGenerated files:")
+    print(f"- {output_path}/team_composition.html (Overall team composition)")
+    print(f"- {output_path}/weekly_trends.html (Weekly trends by team)")
+    print(f"- {output_path}/lead_time.html (Lead time by project and category)")
+    print(f"- {output_path}/engineering_taxonomy.csv (Raw data)")
 
 
 @team_app.command("list")
@@ -72,6 +78,6 @@ def list_projects() -> None:
     projects = _task_service.get_core_connectivity_projects_keys()
     if projects:
         for _project in projects:
-            pass
+            print(f"Project: {_project.key}")
     else:
         pass
