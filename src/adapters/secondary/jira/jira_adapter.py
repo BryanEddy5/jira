@@ -10,7 +10,7 @@ from typing import TYPE_CHECKING
 
 from src.adapters.secondary.jira.mappers import map_issue, map_project
 from src.adapters.secondary.jira.models import ProjectCategory
-from src.domain.models import Issue, IssueStatus, IssueType, Project
+from src.domain.models import CreateIssueRequest, Issue, IssueStatus, IssueType, Project
 
 if TYPE_CHECKING:
     from datetime import datetime
@@ -47,8 +47,14 @@ class JiraAdapter:
             "",
         ]
 
-    def create_issue(self, fields: dict) -> Issue:
-        """Create a new JIRA issue."""
+    def create_issue(self, request: CreateIssueRequest) -> Issue:
+        """Create a new JIRA issue from a domain model request."""
+        fields = {
+            "project": request.project_key,
+            "summary": request.summary,
+            "description": request.description,
+            "issuetype": {"name": request.issue_type.value},
+        }
         jira_issue = self.jira.create_issue(fields=fields)
         return map_issue(jira_issue, self.engineering_work_taxonomy)
 

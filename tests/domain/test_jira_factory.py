@@ -1,5 +1,6 @@
 from src.adapters.secondary.jira import jira_factory
 from src.adapters.secondary.jira.jira_adapter import Issue, JiraAdapter
+from src.domain.models import CreateIssueRequest, IssueType
 
 
 def test_create_jira_ticket() -> None:
@@ -7,14 +8,14 @@ def test_create_jira_ticket() -> None:
     # Define test parameters
     jira = jira_factory.create()
 
-    # Call the method
-    fields = {
-        "project": "BB",
-        "summary": "Test Summary",
-        "description": "Test Description",
-        "issuetype": {"name": "Task"},
-    }
-    new_issue = jira.create_issue(fields=fields)
+    # Call the method using domain model
+    request = CreateIssueRequest(
+        project_key="BB",
+        summary="Test Summary",
+        description="Test Description",
+        issue_type=IssueType.TASK,
+    )
+    new_issue = jira.create_issue(request)
 
     issue = jira.get_issue(new_issue.key)
 

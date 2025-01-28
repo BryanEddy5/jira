@@ -1,4 +1,4 @@
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from datetime import datetime
 from enum import StrEnum
 
@@ -36,6 +36,16 @@ class StatusTransition:
 
     status: str
     timestamp: datetime
+
+
+@dataclass
+class CreateIssueRequest:
+    """Request model for creating a new issue."""
+
+    project_key: str
+    summary: str
+    description: str
+    issue_type: IssueType = IssueType.TASK
 
 
 @dataclass
