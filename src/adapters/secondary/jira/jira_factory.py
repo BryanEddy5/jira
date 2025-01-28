@@ -1,5 +1,4 @@
 from jira import JIRA
-
 from src.adapters.secondary.jira.jira_adapter import JiraAdapter
 from src.lib.configuration import Settings
 

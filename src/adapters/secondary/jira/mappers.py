@@ -1,12 +1,22 @@
-from datetime import datetime
-from typing import Optional
+"""Mapping functions to convert JIRA entities to domain models.
 
-from jira import Issue as JiraIssue
+This module provides functions to map JIRA's data structures to our domain models,
+ensuring a clean separation between the JIRA API and our domain logic.
+"""
+
+from __future__ import annotations
+
+from datetime import datetime
+from typing import TYPE_CHECKING
 
 from src.domain.models import Issue, Project, StatusTransition
 
+if TYPE_CHECKING:
+    from jira import Issue as JiraIssue
+    from jira import Project as JiraProject
 
-def map_project(jira_project) -> Project:
+
+def map_project(jira_project: JiraProject) -> Project:
     """Convert a JIRA project to a domain Project."""
     return Project(
         key=jira_project.key,
@@ -19,30 +29,26 @@ def map_project(jira_project) -> Project:
 
 def map_status_history(jira_issue: JiraIssue) -> list[StatusTransition]:
     """Extract status transition history from a JIRA issue."""
-    transitions = []
+    if not (hasattr(jira_issue, "changelog") and jira_issue.changelog):
+        return []
 
-    if hasattr(jira_issue, "changelog") and jira_issue.changelog:
-        for history in jira_issue.changelog.histories:
-            for item in history.items:
-                if item.field == "status":
-                    transitions.append(
-                        StatusTransition(
-                            status=item.toString,
-                            timestamp=datetime.strptime(
-                                history.created,
-                                "%Y-%m-%dT%H:%M:%S.%f%z",
-                            ),
-                        ),
-                    )
-
-    return transitions
-
-
-def calculate_lead_time(status_history: list[StatusTransition]) -> Optional[float]:
-    """Calculate lead time from status transitions."""
-    in_progress_dates = [
-        t.timestamp for t in status_history if t.status == "In Progress"
+    return [
+        StatusTransition(
+            status=item.toString,
+            timestamp=datetime.strptime(
+                history.created,
+                "%Y-%m-%dT%H:%M:%S.%f%z",
+            ),
+        )
+        for history in jira_issue.changelog.histories
+        for item in history.items
+        if item.field == "status"
     ]
+
+
+def calculate_lead_time(status_history: list[StatusTransition]) -> float | None:
+    """Calculate lead time from status transitions."""
+    in_progress_dates = [t.timestamp for t in status_history if t.status == "In Progress"]
     done_dates = [t.timestamp for t in status_history if t.status == "Done"]
 
     if in_progress_dates and done_dates:
@@ -65,8 +71,7 @@ def map_issue(jira_issue: JiraIssue, engineering_taxonomy_field: str) -> Issue:
             jira_issue.fields.resolutiondate,
             "%Y-%m-%dT%H:%M:%S.%f%z",
         )
-        if hasattr(jira_issue.fields, "resolutiondate")
-        and jira_issue.fields.resolutiondate
+        if hasattr(jira_issue.fields, "resolutiondate") and jira_issue.fields.resolutiondate
         else None,
         status=jira_issue.fields.status.name,
         engineering_category=str(

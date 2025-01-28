@@ -10,7 +10,7 @@ runner = CliRunner()
 
 
 @pytest.mark.integration
-def test_projects_analyze(tmp_path) -> None:
+def test_projects_analyze(tmp_path: Path) -> None:
     """Test the 'projects analyze' command."""
     # Setup: Save current analysis output if it exists
     analysis_dir = Path("analysis_output")
@@ -19,7 +19,9 @@ def test_projects_analyze(tmp_path) -> None:
 
     if analysis_dir.exists():
         shutil.copytree(
-            analysis_dir, backup_dir / "analysis_output", dirs_exist_ok=True,
+            analysis_dir,
+            backup_dir / "analysis_output",
+            dirs_exist_ok=True,
         )
 
     try:
@@ -47,16 +49,16 @@ def test_projects_analyze(tmp_path) -> None:
             expected = Path("tests/fixtures/analysis_output") / filename
             assert actual.exists(), f"Missing output file: {filename}"
             assert expected.exists(), f"Missing fixture file: {filename}"
-            assert actual.read_text() == expected.read_text(), (
-                f"Content mismatch in {filename}"
-            )
+            assert actual.read_text() == expected.read_text(), f"Content mismatch in {filename}"
 
     finally:
         # Cleanup: Restore original files if they existed
         if (backup_dir / "analysis_output").exists():
             shutil.rmtree(analysis_dir, ignore_errors=True)
             shutil.copytree(
-                backup_dir / "analysis_output", analysis_dir, dirs_exist_ok=True,
+                backup_dir / "analysis_output",
+                analysis_dir,
+                dirs_exist_ok=True,
             )
 
 

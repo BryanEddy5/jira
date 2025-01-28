@@ -1,6 +1,7 @@
+"""CLI commands for analyzing team and project metrics."""
+
 from datetime import datetime, timedelta
 from pathlib import Path
-from typing import Optional
 
 import pytz
 import typer
@@ -8,6 +9,30 @@ import typer
 from src.adapters.secondary.jira import jira_factory
 from src.domain.task_service import TaskService
 from src.domain.team_analysis import TeamAnalysis
+
+# Default values for command options
+DEFAULT_WEEKS = 4
+DEFAULT_OUTPUT_DIR = "analysis_output"
+DEFAULT_START_DATE = datetime.now(pytz.UTC)
+
+# Command options
+WEEKS_OPTION = typer.Option(
+    DEFAULT_WEEKS,
+    help="Number of weeks to analyze",
+)
+OUTPUT_DIR_OPTION = typer.Option(
+    DEFAULT_OUTPUT_DIR,
+    help="Directory to save visualization files",
+)
+START_DATE_OPTION = typer.Option(
+    None,  # Will be set to DEFAULT_START_DATE if None
+    help="Start date for analysis (format: YYYY-MM-DD). "
+    "Defaults to current date minus specified weeks.",
+)
+PROJECT_KEYS_OPTION = typer.Option(
+    None,
+    help="Projects to analyze. Defaults to just API BU Projects",
+)
 
 team_app = typer.Typer()
 _jira = jira_factory.create()
@@ -17,19 +42,10 @@ _team_analysis = TeamAnalysis()
 
 @team_app.command("analyze")
 def analyze_teams(
-    weeks: int = typer.Option(4, help="Number of weeks to analyze"),
-    output_dir: str = typer.Option(
-        "analysis_output",
-        help="Directory to save visualization files",
-    ),
-    start_date: Optional[datetime] = typer.Option(
-        datetime.now(pytz.UTC),
-        help="Start date for analysis (format: YYYY-MM-DD). Defaults to X weeks ago based on weeks parameter",
-    ),
-    project_keys: list[str] = typer.Option(
-        None,
-        help="Projects to analyze. Defaults to just API BU Projects",
-    ),
+    weeks: int = WEEKS_OPTION,
+    output_dir: str = OUTPUT_DIR_OPTION,
+    start_date: datetime | None = START_DATE_OPTION,
+    project_keys: list[str] = PROJECT_KEYS_OPTION,
 ) -> None:
     """Analyze engineering work taxonomy across teams and generate visualizations."""
     # Create output directory if it doesn't exist
@@ -37,16 +53,17 @@ def analyze_teams(
     output_path.mkdir(parents=True, exist_ok=True)
 
     # Set date range
-    def prev_weekday(date: datetime, weekday: int = 0):
+    def prev_weekday(date: datetime, weekday: int = 0) -> datetime:
+        """Get previous weekday from given date."""
         days_ahead = weekday - date.weekday()
         return date + timedelta(days=days_ahead)
 
-    start_date = prev_weekday(start_date, 0)
-    end_date = start_date + timedelta(weeks=weeks)
+    start = prev_weekday(start_date or DEFAULT_START_DATE, 0)
+    end_date = start + timedelta(weeks=weeks)
 
     # Get and process data
     analytics = _task_service.get_engineering_taxonomy(
-        start_date,
+        start,
         end_date,
         project_keys,
     )
@@ -79,5 +96,3 @@ def list_projects() -> None:
     if projects:
         for _project in projects:
             print(f"Project: {_project.key}")
-    else:
-        pass

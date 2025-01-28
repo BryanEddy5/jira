@@ -1,15 +1,37 @@
-from datetime import datetime
-from typing import Optional
+"""JIRA adapter for interacting with the JIRA API.
 
-from jira import JIRA
+This module provides a clean interface for interacting with JIRA,
+handling the mapping between JIRA's data structures and our domain models.
+"""
+
+from __future__ import annotations
+
+from typing import TYPE_CHECKING
 
 from src.adapters.secondary.jira.mappers import map_issue, map_project
 from src.adapters.secondary.jira.models import ProjectCategory
 from src.domain.models import Issue, IssueStatus, IssueType, Project
 
+if TYPE_CHECKING:
+    from datetime import datetime
+
+    from jira import JIRA
+
 
 class JiraAdapter:
+    """Adapter for interacting with JIRA API.
+
+    Handles all JIRA operations including issue creation, deletion, searching,
+    and project management. Maps JIRA data structures to domain models.
+    """
+
     def __init__(self, jira: JIRA) -> None:
+        """Initialize the JIRA adapter.
+
+        Args:
+            jira: Initialized JIRA client instance
+
+        """
         self.jira = jira
         self.engineering_work_taxonomy = "customfield_11173"
         self.jira_fields = [
@@ -58,7 +80,7 @@ class JiraAdapter:
         self,
         start_date: datetime,
         end_date: datetime,
-        projects: Optional[list[str]] = None,
+        projects: list[str] | None = None,
     ) -> list[Issue]:
         """Search for issues matching the given criteria.
 
@@ -100,8 +122,7 @@ class JiraAdapter:
             if issues_batch == []:
                 break
             issues_all.extend(
-                map_issue(issue, self.engineering_work_taxonomy)
-                for issue in issues_batch
+                map_issue(issue, self.engineering_work_taxonomy) for issue in issues_batch
             )
             pos += len(issues_batch)
 

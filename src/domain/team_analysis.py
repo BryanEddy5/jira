@@ -1,3 +1,9 @@
+"""Team analysis module for generating engineering work visualizations.
+
+This module provides functionality to analyze and visualize engineering work data,
+including project composition, lead times, and weekly trends.
+"""
+
 import plotly.express as px
 import polars as pl
 
@@ -5,22 +11,25 @@ from src.domain.models import IssueAnalytics
 
 
 class TeamAnalysis:
+    """Analysis and visualization of engineering team metrics.
+
+    Provides methods to transform JIRA issue data into meaningful visualizations
+    of team performance and work distribution.
+    """
+
     def _to_dataframe(self, analytics_data: list[IssueAnalytics]) -> pl.DataFrame:
         """Convert IssueAnalytics list to DataFrame with calculated week column."""
         if not analytics_data:
             return pl.DataFrame()
 
-        df = pl.DataFrame([vars(analytics) for analytics in analytics_data])
-        if not df.is_empty():
-            df = df.with_columns(
+        issue_data = pl.DataFrame([vars(analytics) for analytics in analytics_data])
+        if not issue_data.is_empty():
+            issue_data = issue_data.with_columns(
                 [
-                    pl.col("resolved")
-                    .str.strptime(pl.Datetime)
-                    .dt.week()
-                    .alias("week"),
+                    pl.col("resolved").str.strptime(pl.Datetime).dt.week().alias("week"),
                 ],
             )
-        return df.unique()
+        return issue_data.unique()
 
     def visualize_project_composition(
         self,
@@ -30,31 +39,31 @@ class TeamAnalysis:
         """Create an interactive bar chart of project work composition.
 
         Args:
-            df: DataFrame containing project work data
-            output_path: Path to save the visualization HTML file
+            analytics_data: List of IssueAnalytics objects containing work data
+            output_path: Path to save the visualization HTML file. Defaults to
+                'project_composition.html'
+
+        Raises:
+            ValueError: If no data is available for visualization
 
         """
-        df = self._to_dataframe(analytics_data)
-        if df.is_empty():
+        issue_data = self._to_dataframe(analytics_data)
+        if issue_data.is_empty():
             msg = "No data available for visualization"
             raise ValueError(msg)
 
         # Calculate composition percentages
         composition = (
-            (
-                df.groupby(["project", "category", "week"])
-                .agg(pl.count().alias("count"))
-                .join(
-                    df.groupby(["project", "week"]).agg(
-                        pl.count().alias("count_total"),
-                    ),
-                    on=["project", "week"],
-                )
-                .with_columns(
-                    (pl.col("count") / pl.col("count_total") * 100)
-                    .round()
-                    .alias("percentage"),
-                )
+            issue_data.groupby(["project", "category", "week"])
+            .agg(pl.count().alias("count"))
+            .join(
+                issue_data.groupby(["project", "week"]).agg(
+                    pl.count().alias("count_total"),
+                ),
+                on=["project", "week"],
+            )
+            .with_columns(
+                (pl.col("count") / pl.col("count_total") * 100).round().alias("percentage"),
             )
             .sort("project")
             .sort("week")
@@ -93,25 +102,26 @@ class TeamAnalysis:
         analytics_data: list[IssueAnalytics],
         output_path: str = "project_lead_time.html",
     ) -> None:
-        """Create an interactive bar chart showing total lead time by project and category.
+        """Create an interactive bar chart showing lead time by project and category.
 
         Args:
-            df: DataFrame containing project work data
-            output_path: Path to save the visualization HTML file
+            analytics_data: List of IssueAnalytics objects containing work data
+            output_path: Path to save the visualization HTML file. Defaults to
+                'project_lead_time.html'
+
+        Raises:
+            ValueError: If no data is available for visualization
 
         """
-        df = self._to_dataframe(analytics_data)
-        if df.is_empty():
+        issue_data = self._to_dataframe(analytics_data)
+        if issue_data.is_empty():
             msg = "No data available for visualization"
             raise ValueError(msg)
 
         # Calculate total lead time for each project/category/week
         composition = (
-            (
-                df.groupby(["project", "category", "week"]).agg(
-                    pl.col("lead_time_hours").sum().round(1).alias("total_lead_time"),
-                )
-            )
+            issue_data.groupby(["project", "category", "week"])
+            .agg(pl.col("lead_time_hours").sum().round(1).alias("total_lead_time"))
             .sort("project")
             .sort("week")
         )
@@ -152,30 +162,31 @@ class TeamAnalysis:
         """Create an interactive line chart showing weekly work composition trends.
 
         Args:
-            df: DataFrame containing project work data
-            output_path: Path to save the visualization HTML file
+            analytics_data: List of IssueAnalytics objects containing work data
+            output_path: Path to save the visualization HTML file. Defaults to
+                'weekly_trends.html'
+
+        Raises:
+            ValueError: If no data is available for visualization
 
         """
-        df = self._to_dataframe(analytics_data)
-        if df.is_empty():
+        issue_data = self._to_dataframe(analytics_data)
+        if issue_data.is_empty():
             msg = "No data available for visualization"
             raise ValueError(msg)
 
         composition = (
-            df.groupby(
-                [
-                    "week",
-                    "category",
-                ],
-            )
+            issue_data.groupby(["week", "category"])
             .agg(pl.count().alias("count"))
-            .join(df.groupby("week").agg(pl.count().alias("count_total")), on="week")
-            .with_columns(
-                (pl.col("count") / pl.col("count_total") * 100)
-                .round()
-                .alias("percentage"),
+            .join(
+                issue_data.groupby("week").agg(pl.count().alias("count_total")),
+                on="week",
             )
-        ).sort("week")
+            .with_columns(
+                (pl.col("count") / pl.col("count_total") * 100).round().alias("percentage"),
+            )
+            .sort("week")
+        )
 
         fig = (
             px.line(
@@ -192,8 +203,10 @@ class TeamAnalysis:
                 },
                 text="percentage",
                 height=800,
-            ).update_traces(texttemplate="%{text:.0f}%")
-        ).update_xaxes(type="category")
+            )
+            .update_traces(texttemplate="%{text:.0f}%")
+            .update_xaxes(type="category")
+        )
 
         fig.write_html(output_path)
 
@@ -202,6 +215,13 @@ class TeamAnalysis:
         analytics_data: list[IssueAnalytics],
         output_path: str = "analysis_output/engineering_taxonomy.csv",
     ) -> None:
-        """Write DataFrame to CSV file."""
-        df = self._to_dataframe(analytics_data)
-        df.write_csv(output_path)
+        """Write analysis data to CSV file.
+
+        Args:
+            analytics_data: List of IssueAnalytics objects containing work data
+            output_path: Path to save the CSV file. Defaults to
+                'analysis_output/engineering_taxonomy.csv'
+
+        """
+        issue_data = self._to_dataframe(analytics_data)
+        issue_data.write_csv(output_path)

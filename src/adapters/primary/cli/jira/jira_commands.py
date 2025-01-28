@@ -1,5 +1,8 @@
+"""CLI commands for interacting with JIRA."""
+
+from __future__ import annotations
+
 from datetime import datetime, timedelta
-from typing import Optional
 
 import pytz
 import typer
@@ -16,7 +19,7 @@ _task_service = TaskService(_jira)
 def create(
     summary: str,
     description: str,
-    date: Optional[str] = None,
+    date: str | None = None,
     project: str = "BB",
 ) -> None:
     """Create a new JIRA issue."""
@@ -41,19 +44,19 @@ def get_all_projects() -> None:
 
 
 @jira_app.command()
-def get_issue(id: str) -> None:
+def get_issue(issue_id: str) -> None:
     """Get details of a specific JIRA issue."""
-    issue = _task_service.get_issue(id)
+    issue = _task_service.get_issue(issue_id)
     print(issue.key, issue.summary)
 
 
 @jira_app.command()
-def rm(ids: list[str]) -> None:
+def rm(issue_ids: list[str]) -> None:
     """Delete one or more JIRA issues."""
-    for id in ids:
-        issue = _jira.issue(id)
+    for issue_id in issue_ids:
+        issue = _jira.issue(issue_id)
         if issue:
-            print(f"Deleted issue {id}")
+            print(f"Deleted issue {issue_id}")
             issue.delete()
 
 

@@ -25,12 +25,14 @@ google-auth-httplib2 = "^0.2.0"
 google-api-python-client = "^2.159.0"
 
 [tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
 select = ["ALL"]
-ignore = ["T201"]
+ignore = ["T201", "COM812", "D100", "D203", "D213", "D104"]
 
-
-
-[tool.ruff.per-file-ignores]
+[tool.ruff.lint.per-file-ignores]
 "tests/*.py" = ["S101"]
 
 [tool.poetry.group.dev.dependencies]

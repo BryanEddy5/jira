@@ -1,5 +1,4 @@
 from datetime import datetime
-from typing import Optional
 
 from src.adapters.secondary.jira.jira_adapter import JiraAdapter
 from src.domain.models import Issue, IssueAnalytics, Project
@@ -9,6 +8,7 @@ class TaskService:
     """Service class responsible for handling JIRA task-related operations and analytics."""
 
     def __init__(self, jira_adapter: JiraAdapter) -> None:
+        """Initialize TaskService with a JIRA adapter."""
         self.jira_adapter = jira_adapter
 
     def get_issue(self, issue_id: str) -> Issue:
@@ -23,14 +23,15 @@ class TaskService:
         self,
         start_date: datetime,
         end_date: datetime,
-        projects: Optional[list[str]] = None,
+        projects: list[str] | None = None,
     ) -> list[IssueAnalytics]:
         """Get engineering work taxonomy for all projects or specified projects.
 
         Args:
             start_date: Start date for analysis
             end_date: End date for analysis
-            projects: Optional list of specific projects to analyze. If None, analyzes all projects.
+            projects: Optional list of specific projects to analyze.
+                If None, analyzes all projects.
 
         Returns:
             DataFrame with project work composition

@@ -27,7 +27,9 @@ def test_get_issue() -> None:
 
     # Execute command
     result = runner.invoke(
-        app, ["jira", "get-issue", issue_key], catch_exceptions=False,
+        app,
+        ["jira", "get-issue", issue_key],
+        catch_exceptions=False,
     )
 
     # Check exit code
