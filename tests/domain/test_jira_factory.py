@@ -1,9 +1,10 @@
-from adapters.secondary.jira import jira_factory
-
 from jira import JIRA, Issue
 
+from adapters.secondary.jira import jira_factory
 
-def test_create_jira_ticket():
+
+def test_create_jira_ticket() -> None:
+    """Test create JIRA ticket."""
     # Define test parameters
     jira = jira_factory.create()
 

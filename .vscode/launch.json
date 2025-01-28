@@ -5,37 +5,53 @@
             "name": "Debug health-check",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/src/cli/entry.py jira",
+            "program": "${workspaceFolder}/src/adapters/primary/cli/entry.py",
             "console": "integratedTerminal",
-            "args": ["health-check"],
-            "justMyCode": true
+            "justMyCode": true,
+            "args": ["jira", "health-check"]
         },
         {
             "name": "Debug projects analyze",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/src/cli/entry.py",
+            "program": "${workspaceFolder}/src/adapters/primary/cli/entry.py",
             "console": "integratedTerminal",
-            "args": ["projects", "analyze", "--start-date=2025-01-01"],
-            "justMyCode": true
+            "justMyCode": true,
+            "args": ["projects", "analyze", "--start-date=2025-01-01"]
         },
         {
             "name": "Debug projects list",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/src/cli/entry.py",
+            "program": "${workspaceFolder}/src/adapters/primary/cli/entry.py",
             "console": "integratedTerminal",
-            "args": ["projects", "list"],
-            "justMyCode": true
+            "justMyCode": true,
+            "args": ["projects", "list"]
         },
         {
             "name": "Debug Get Issue",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/src/cli/entry.py",
+            "program": "${workspaceFolder}/src/adapters/primary/cli/entry.py",
             "console": "integratedTerminal",
-            "args": ["jira", "get-issue", "ATP-1708"],
-            "justMyCode": true
+            "justMyCode": true,
+            "args": ["jira", "get-issue", "ATP-1708"]
+        },
+        {
+            "name": "Debug With Input - Not Working",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/adapters/primary/cli/entry.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": ["${input:args}"]
+        }
+    ],
+    "inputs": [
+        {
+            "id": "args",
+            "type": "promptString",
+            "description": "Args for the program"
         }
     ]
 }
