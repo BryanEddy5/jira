@@ -3,9 +3,11 @@ from typing import List
 import pytz
 import typer
 from src.adapters.secondary.jira import jira_factory
+from src.service.task_service import TaskService
 
 jira_app = typer.Typer()
 _jira = jira_factory.create()
+_task_service = TaskService(_jira)
 
 
 @jira_app.command()
@@ -23,11 +25,18 @@ def create(summary: str, description: str, date: str = None, project: str = "BB"
     new_issue = _jira.create_issue(fields=issue_dict)
     print(new_issue.key)
 
+@jira_app.command("list-projects")
+def get_all_projects():
+    """Get list of all projects from Jira."""
+    projects = _task_service.get_all_projects()
+    for project in projects:
+        print(project)
+
 
 @jira_app.command()
 def get_issue(id: str):
     """Get details of a specific JIRA issue."""
-    issue = _jira.issue(id, expand="changelog")
+    issue = _task_service.get_issue(id, expand="changelog")
     print(issue.key, issue.fields.summary)
 
 
