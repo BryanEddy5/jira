@@ -5,18 +5,36 @@
             "name": "Debug health-check",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/src/cli/entry.py",
+            "program": "${workspaceFolder}/src/cli/entry.py jira",
             "console": "integratedTerminal",
             "args": ["health-check"],
             "justMyCode": true
         },
         {
-            "name": "Debug analyze-teams",
+            "name": "Debug projects analyze",
             "type": "debugpy",
             "request": "launch",
             "program": "${workspaceFolder}/src/cli/entry.py",
             "console": "integratedTerminal",
-            "args": ["analyze-teams","--start-date=2025-01-01"],
+            "args": ["projects", "analyze", "--start-date=2025-01-01"],
+            "justMyCode": true
+        },
+        {
+            "name": "Debug projects list",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/cli/entry.py",
+            "console": "integratedTerminal",
+            "args": ["projects", "list"],
+            "justMyCode": true
+        },
+        {
+            "name": "Debug Get Issue",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/cli/entry.py",
+            "console": "integratedTerminal",
+            "args": ["jira", "get-issue", "ATP-1708"],
             "justMyCode": true
         }
     ]

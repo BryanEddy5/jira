@@ -1,4 +1,4 @@
-from src.service import jira_factory
+from adapters.secondary.jira import jira_factory
 
 from jira import JIRA, Issue
 

@@ -4,3 +4,6 @@ run:
 
 app-lint:
 	poetry run ruff check --unsafe-fixes --fix && poetry run ruff format
+
+init:
+	poetry install

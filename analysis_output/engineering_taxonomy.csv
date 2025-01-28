@@ -1,304 +1,302 @@
-project,issue_key,category,resolved,type,url,week
-Address-Tracking,ATP-2331,"Unplanned (Bug, Incident, Inquiry)",2025-01-08T07:43:54.585-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135525,2
-Rating,RATE-1572,Carrier Compliance (Cc),2025-01-17T09:04:01.728-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/137216,3
-Rating,RATE-1454,Technical Investment (Tech Inv),2025-01-14T12:08:14.534-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135978,3
-Reconciliation,RECON-1056,Technical Investment (Tech Inv),2025-01-23T09:37:01.489-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136411,4
-Rating,RATE-1490,Carrier Compliance (Cc),2025-01-16T16:25:08.534-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136325,3
-Reconciliation,RECON-1098,Technical Investment (Tech Inv),2025-01-23T15:12:47.853-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137725,4
-Address-Tracking,ATP-2369,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T09:42:55.523-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136864,3
-Rating,RATE-1519,Carrier Compliance (Cc),2025-01-09T13:31:51.225-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136640,2
-Address-Tracking,ATP-2348,Technical Investment (Tech Inv),2025-01-09T05:21:56.045-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135787,2
-Carrier Configurations,CFG-761,Technical Investment (Tech Inv),2025-01-07T07:49:19.333-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/131473,2
-Rating,RATE-1494,Carrier Compliance (Cc),2025-01-17T13:52:14.838-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136331,3
-Address-Tracking,ATP-2306,Technical Investment (Tech Inv),2025-01-10T08:03:21.752-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/134883,2
-Address-Tracking,ATP-2366,Team Management (TM),2025-01-17T09:33:09.894-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/136816,3
-Rating,RATE-1539,Carrier Compliance (Cc),2025-01-13T17:01:16.696-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136782,3
-Core Enablement,CET-437,Technical Investment (Tech Inv),2025-01-10T05:37:56.506-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133870,2
-Rating,RATE-1514,"Unplanned (Bug, Incident, Inquiry)",2025-01-09T05:34:37.832-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136565,2
-Rating,RATE-1585,Carrier Compliance (Cc),2025-01-22T06:52:24.404-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137391,4
-Rating,RATE-1530,Carrier Compliance (Cc),2025-01-17T16:01:43.352-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136731,3
-Core Enablement,CET-483,Technical Investment (Tech Inv),2025-01-10T05:36:32.206-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136033,2
-Carrier Configurations,CFG-1005,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T04:48:49.745-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137196,3
-Address-Tracking,ATP-2358,"Unplanned (Bug, Incident, Inquiry)",2025-01-10T03:26:09.490-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136537,2
-Label Refund Manifest,LABEL-1929,Carrier Compliance (Cc),2025-01-15T08:56:40.309-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/134069,3
-Carrier Configurations,CFG-996,Carrier Compliance (Cc),2025-01-21T05:37:33.701-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/136600,4
-Carrier Configurations,CFG-946,Carrier Compliance (Cc),2025-01-21T16:50:23.844-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135155,4
-Reconciliation,RECON-1048,Technical Investment (Tech Inv),2025-01-16T12:49:47.120-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136401,3
-Rating,RATE-1532,Carrier Compliance (Cc),2025-01-17T15:40:37.713-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136735,3
-Rating,RATE-1517,"Unplanned (Bug, Incident, Inquiry)",2025-01-10T10:26:30.995-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136617,2
-Address-Tracking,ATP-2396,"Unplanned (Bug, Incident, Inquiry)",2025-01-21T11:26:15.541-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137274,4
-Address-Tracking,ATP-2352,"Unplanned (Bug, Incident, Inquiry)",2025-01-21T13:43:54.019-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136372,4
-Rating,RATE-1475,Carrier Compliance (Cc),2025-01-17T16:06:35.917-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136217,3
-Address-Tracking,ATP-2362,"Unplanned (Bug, Incident, Inquiry)",2025-01-15T05:08:37.491-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136772,3
-Rating,RATE-1568,Carrier Compliance (Cc),2025-01-17T17:19:14.057-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137192,3
-Rating,RATE-1527,Carrier Compliance (Cc),2025-01-16T17:41:02.405-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136728,3
-Reconciliation,RECON-1088,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T15:03:40.706-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137273,3
-Label Refund Manifest,LABEL-2195,Carrier Compliance (Cc),2025-01-22T09:13:00.769-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136464,4
-Address-Tracking,ATP-2316,"Unplanned (Bug, Incident, Inquiry)",2025-01-06T07:58:17.274-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135166,2
-Rating,RATE-1631,"Unplanned (Bug, Incident, Inquiry)",2025-01-25T09:00:51.126-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/138011,4
-Address-Tracking,ATP-2372,Partner Commitment (Pc),2025-01-24T07:10:34.599-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136989,4
-Rating,RATE-1510,Technical Investment (Tech Inv),2025-01-15T07:55:49.978-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136515,3
-Core Enablement,CET-515,Technical Investment (Tech Inv),2025-01-13T14:48:30.415-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136743,3
-Address-Tracking,ATP-2341,Team Management (TM),2025-01-10T09:13:43.663-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/135713,2
-Label Refund Manifest,LABEL-2113,"Unplanned (Bug, Incident, Inquiry)",2025-01-09T13:13:22.217-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135159,2
-Rating,RATE-1546,"Unplanned (Bug, Incident, Inquiry)",2025-01-24T15:23:47.103-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136967,4
-Label Refund Manifest,LABEL-2153,Technical Investment (Tech Inv),2025-01-17T05:45:45.266-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135999,3
-Reconciliation,RECON-1031,"Unplanned (Bug, Incident, Inquiry)",2025-01-09T10:43:35.069-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135716,2
-Address-Tracking,ATP-2402,Partner Commitment (Pc),2025-01-23T11:07:03.983-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137409,4
-Rating,RATE-1559,Carrier Compliance (Cc),2025-01-15T15:38:33.665-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137139,3
-Address-Tracking,ATP-2201,Team Management (TM),2025-01-21T09:21:53.608-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/132994,4
-Address-Tracking,ATP-2350,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T09:42:07.118-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135947,3
-Carrier Configurations,CFG-1001,"Unplanned (Bug, Incident, Inquiry)",2025-01-15T07:20:15.723-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137064,3
-Rating,RATE-1498,Carrier Compliance (Cc),2025-01-17T13:16:46.978-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136391,3
-Carrier Configurations,CFG-992,Carrier Compliance (Cc),2025-01-16T06:06:24.345-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136373,3
-Reconciliation,RECON-958,Feature - Product Enhancement,2025-01-09T09:05:20.719-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133203,2
-Label Refund Manifest,LABEL-2283,"Unplanned (Bug, Incident, Inquiry)",2025-01-17T12:46:03.453-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137278,3
-Rating,RATE-650,Carrier Compliance (Cc),2025-01-23T10:53:16.802-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/119945,4
-Carrier Configurations,CFG-939,"Unplanned (Bug, Incident, Inquiry)",2025-01-03T14:26:18.801-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135059,1
-Carrier Configurations,CFG-991,"Unplanned (Bug, Incident, Inquiry)",2025-01-23T08:43:37.814-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136330,4
-Rating,RATE-1508,Carrier Compliance (Cc),2025-01-17T15:27:36.315-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136448,3
-Rating,RATE-1359,Team Management (TM),2025-01-22T14:50:24.447-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/134727,4
-Address-Tracking,ATP-1586,Carrier Compliance (Cc),2025-01-09T08:13:13.107-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/121565,2
-Label Refund Manifest,LABEL-2199,Technical Investment (Tech Inv),2025-01-16T10:45:38.201-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136519,3
-Label Refund Manifest,LABEL-2267,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T10:45:52.648-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137166,3
-Rating,RATE-1534,Team Management (TM),2025-01-11T16:55:28.850-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136751,2
-Reconciliation,RECON-1099,Team Management (TM),2025-01-23T09:08:22.765-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/137825,4
-Label Refund Manifest,LABEL-2081,"Unplanned (Bug, Incident, Inquiry)",2025-01-09T13:11:27.168-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135584,2
-Rating,RATE-1481,Carrier Compliance (Cc),2025-01-17T14:36:16.183-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136230,3
-Reconciliation,RECON-1051,Technical Investment (Tech Inv),2025-01-17T10:48:23.443-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136404,3
-Address-Tracking,ATP-2392,"Unplanned (Bug, Incident, Inquiry)",2025-01-21T11:25:44.493-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137172,4
-Rating,RATE-1553,Carrier Compliance (Cc),2025-01-17T09:37:05.840-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137030,3
-Carrier Configurations,CFG-974,Technical Investment (Tech Inv),2025-01-02T06:22:30.589-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135640,1
-Rating,RATE-1504,Carrier Compliance (Cc),2025-01-17T13:52:23.063-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136443,3
-Rating,RATE-1493,Carrier Compliance (Cc),2025-01-17T16:00:46.611-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136328,3
-Rating,RATE-1464,"Unplanned (Bug, Incident, Inquiry)",2025-01-05T21:42:46.538-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136075,2
-Rating,RATE-1362,"Unplanned (Bug, Incident, Inquiry)",2025-01-08T10:04:34.656-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134805,2
-Rating,RATE-1468,Carrier Compliance (Cc),2025-01-03T10:50:39.397-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136105,1
-Rating,RATE-1487,Carrier Compliance (Cc),2025-01-16T16:00:34.341-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136322,3
-Address-Tracking,ATP-2297,Partner Commitment (Pc),2025-01-08T07:32:27.121-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/134752,2
-Rating,RATE-1578,Carrier Compliance (Cc),2025-01-17T13:31:09.254-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137285,3
-Rating,RATE-1518,"Unplanned (Bug, Incident, Inquiry)",2025-01-09T12:08:11.424-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136618,2
-Reconciliation,RECON-962,Feature - Product Enhancement,2025-01-06T09:05:48.901-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133208,2
-Carrier Configurations,CFG-928,"Unplanned (Bug, Incident, Inquiry)",2025-01-09T16:47:27.152-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134872,2
-Rating,RATE-1463,Carrier Compliance (Cc),2025-01-17T11:48:58.508-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136074,3
-Rating,RATE-1036,"Unplanned (Bug, Incident, Inquiry)",2025-01-07T06:40:25.565-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/130668,2
-Carrier Configurations,CFG-898,Carrier Compliance (Cc),2025-01-06T10:14:34.171-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134083,2
-Reconciliation,RECON-1036,"Unplanned (Bug, Incident, Inquiry)",2025-01-08T09:06:29.078-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136072,2
-Rating,RATE-1503,Carrier Compliance (Cc),2025-01-17T11:58:03.908-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136442,3
-Label Refund Manifest,LABEL-1923,Carrier Compliance (Cc),2025-01-15T08:56:39.511-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/134036,3
-Carrier Configurations,CFG-988,Partner Commitment (Pc),2025-01-23T13:50:38.535-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136245,4
-Rating,RATE-1476,Carrier Compliance (Cc),2025-01-17T11:44:27.415-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136218,3
-Carrier Configurations,CFG-973,Technical Investment (Tech Inv),2025-01-02T06:22:28.623-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135637,1
-Address-Tracking,ATP-1075,Carrier Compliance (Cc),2025-01-06T07:59:43.325-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/113191,2
-Address-Tracking,ATP-2333,"Unplanned (Bug, Incident, Inquiry)",2025-01-02T07:29:51.307-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135588,1
-Core Enablement,CET-509,Team Management (TM),2025-01-23T16:48:41.128-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136497,4
-Reconciliation,RECON-843,Team Management (TM),2025-01-10T12:23:15.931-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/129655,2
-Rating,RATE-1584,Carrier Compliance (Cc),2025-01-17T16:41:44.537-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137388,3
-Carrier Configurations,CFG-943,Carrier Compliance (Cc),2025-01-17T05:53:28.644-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/135125,3
-Reconciliation,RECON-986,Technical Investment (Tech Inv),2025-01-21T07:26:24.134-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133663,4
-Reconciliation,RECON-963,Feature - Product Enhancement,2025-01-03T09:04:25.059-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133209,1
-Rating,RATE-1461,Team Management (TM),2025-01-16T08:11:12.201-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136037,3
-Address-Tracking,ATP-1977,"Unplanned (Bug, Incident, Inquiry)",2025-01-13T10:20:29.401-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/129225,3
-Rating,RATE-1458,Team Management (TM),2025-01-08T14:58:33.319-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136034,2
-Reconciliation,RECON-1078,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T09:08:28.324-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137050,3
-Rating,RATE-1551,Technical Investment (Tech Inv),2025-01-14T17:49:10.138-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137025,3
-Rating,RATE-1225,"Unplanned (Bug, Incident, Inquiry)",2025-01-02T14:52:00.200-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/133135,1
-Core Enablement,CET-504,Technical Investment (Tech Inv),2025-01-24T04:38:43.100-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136492,4
-Rating,RATE-1535,Technical Investment (Tech Inv),2025-01-23T07:57:29.467-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136759,4
-Rating,RATE-1524,Carrier Compliance (Cc),2025-01-17T12:45:53.885-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136687,3
-Rating,RATE-1512,Carrier Compliance (Cc),2025-01-10T14:57:06.255-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136531,2
-Reconciliation,RECON-1005,Feature - Product Enhancement,2025-01-24T10:46:04.432-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/134646,4
-Address-Tracking,ATP-2412,"Unplanned (Bug, Incident, Inquiry)",2025-01-23T11:12:22.097-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137674,4
-Core Enablement,CET-516,Technical Investment (Tech Inv),2025-01-15T08:34:36.389-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136744,3
-Rating,RATE-1479,Technical Investment (Tech Inv),2025-01-23T08:30:21.214-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136225,4
-Reconciliation,RECON-1029,"Unplanned (Bug, Incident, Inquiry)",2025-01-07T09:04:51.924-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135705,2
-Reconciliation,RECON-1004,Feature - Product Enhancement,2025-01-24T09:04:57.485-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/134645,4
-Reconciliation,RECON-964,Feature - Product Enhancement,2025-01-06T09:08:12.619-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133210,2
-Label Refund Manifest,LABEL-2314,"Unplanned (Bug, Incident, Inquiry)",2025-01-22T09:32:30.571-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137590,4
-Reconciliation,RECON-1077,Technical Investment (Tech Inv),2025-01-17T12:51:19.244-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137017,3
-Label Refund Manifest,LABEL-2271,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T10:45:58.773-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137200,3
-Core Enablement,CET-491,Technical Investment (Tech Inv),2025-01-17T03:59:08.693-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136470,3
-Core Enablement,CET-402,Technical Investment (Tech Inv),2025-01-10T07:33:26.578-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/132323,2
-Rating,RATE-649,Carrier Compliance (Cc),2025-01-24T06:35:50.869-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/119943,4
-Rating,RATE-1581,Technical Investment (Tech Inv),2025-01-17T09:44:38.222-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137350,3
-Label Refund Manifest,LABEL-2060,Level of Effort (LoE),2025-01-06T04:03:03.222-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135303,2
-Label Refund Manifest,LABEL-1715,"Unplanned (Bug, Incident, Inquiry)",2025-01-22T16:40:46.205-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/132241,4
-Rating,RATE-1587,Carrier Compliance (Cc),2025-01-17T16:57:04.928-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/137395,3
-Core Enablement,CET-510,Technical Investment (Tech Inv),2025-01-23T16:40:27.249-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136498,4
-Reconciliation,RECON-696,Level of Effort (LoE),2025-01-15T07:50:43.775-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/126392,3
-Carrier Configurations,CFG-966,Technical Investment (Tech Inv),2025-01-02T06:22:24.127-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135488,1
-Rating,RATE-1492,Carrier Compliance (Cc),2025-01-16T16:50:04.000-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136327,3
-Label Refund Manifest,LABEL-1986,"Unplanned (Bug, Incident, Inquiry)",2025-01-07T05:33:04.491-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134604,2
-Rating,RATE-1471,Carrier Compliance (Cc),2025-01-17T16:02:52.208-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136143,3
-Carrier Configurations,CFG-987,Carrier Compliance (Cc),2025-01-14T05:51:13.298-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/136237,3
-Rating,RATE-1394,"Unplanned (Bug, Incident, Inquiry)",2025-01-10T10:48:21.863-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135184,2
-Label Refund Manifest,LABEL-1120,"Unplanned (Bug, Incident, Inquiry)",2025-01-07T09:07:21.798-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/123936,2
-Label Refund Manifest,LABEL-2198,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T13:01:17.421-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136513,3
-Label Refund Manifest,LABEL-2324,Technical Investment (Tech Inv),2025-01-24T09:09:07.097-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137712,4
-Address-Tracking,ATP-2356,Team Management (TM),2025-01-17T09:32:48.007-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/136456,3
-Rating,RATE-1500,Carrier Compliance (Cc),2025-01-16T18:01:38.992-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136394,3
-Reconciliation,RECON-954,Feature - Product Enhancement,2025-01-02T09:05:59.703-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133190,1
-Label Refund Manifest,LABEL-1832,Level of Effort (LoE),2025-01-22T10:27:26.079-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133258,4
-Address-Tracking,ATP-2359,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T09:45:52.050-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136545,3
-Rating,RATE-1400,Level of Effort (LoE),2025-01-09T05:30:59.492-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135272,2
-Carrier Configurations,CFG-1013,"Unplanned (Bug, Incident, Inquiry)",2025-01-24T06:28:49.869-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137444,4
-Core Enablement,CET-503,Technical Investment (Tech Inv),2025-01-23T16:49:10.271-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136491,4
-Rating,RATE-1609,Carrier Compliance (Cc),2025-01-24T11:10:15.676-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137840,4
-Rating,RATE-1545,"Unplanned (Bug, Incident, Inquiry)",2025-01-13T13:43:42.569-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136962,3
-Rating,RATE-1583,"Unplanned (Bug, Incident, Inquiry)",2025-01-17T13:14:14.365-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137377,3
-Rating,RATE-1526,Carrier Compliance (Cc),2025-01-17T13:10:05.469-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136700,3
-Rating,RATE-1620,Carrier Compliance (Cc),2025-01-24T12:03:20.794-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137887,4
-Address-Tracking,ATP-2344,"Unplanned (Bug, Incident, Inquiry)",2025-01-02T09:14:53.629-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135749,1
-Rating,RATE-1444,"Unplanned (Bug, Incident, Inquiry)",2025-01-03T08:46:03.239-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135922,1
-Label Refund Manifest,LABEL-1499,"Unplanned (Bug, Incident, Inquiry)",2025-01-06T13:46:20.604-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/130368,2
-Label Refund Manifest,LABEL-1876,"Unplanned (Bug, Incident, Inquiry)",2025-01-24T05:27:59.499-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/133577,4
-Rating,RATE-1488,Carrier Compliance (Cc),2025-01-16T14:56:38.273-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136323,3
-Carrier Configurations,CFG-1007,"Unplanned (Bug, Incident, Inquiry)",2025-01-18T17:11:31.137-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137236,3
-Carrier Configurations,CFG-929,Carrier Compliance (Cc),2025-01-10T04:12:11.626-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134891,2
-Carrier Configurations,CFG-1009,"Unplanned (Bug, Incident, Inquiry)",2025-01-17T05:59:49.552-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137296,3
-Carrier Configurations,CFG-985,"Unplanned (Bug, Incident, Inquiry)",2025-01-07T12:39:12.847-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136157,2
-Label Refund Manifest,LABEL-1987,"Unplanned (Bug, Incident, Inquiry)",2025-01-10T08:29:21.569-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134605,2
-Address-Tracking,ATP-1584,Carrier Compliance (Cc),2025-01-16T09:43:07.468-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/121563,3
-Label Refund Manifest,LABEL-2210,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T06:43:28.763-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136678,3
-Reconciliation,RECON-959,Feature - Product Enhancement,2025-01-07T12:15:41.119-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133204,2
-Rating,RATE-1497,Carrier Compliance (Cc),2025-01-16T21:43:09.018-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136347,3
-Rating,RATE-1489,Carrier Compliance (Cc),2025-01-17T16:06:01.832-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136324,3
-Reconciliation,RECON-1095,"Unplanned (Bug, Incident, Inquiry)",2025-01-21T12:04:35.499-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137572,4
-Rating,RATE-1601,Level of Effort (LoE),2025-01-22T14:10:12.268-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137752,4
-Label Refund Manifest,LABEL-2047,"Unplanned (Bug, Incident, Inquiry)",2025-01-06T10:21:10.341-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135161,2
-Carrier Configurations,CFG-970,Technical Investment (Tech Inv),2025-01-02T06:22:26.359-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135516,1
-Address-Tracking,ATP-2406,"Unplanned (Bug, Incident, Inquiry)",2025-01-21T11:26:52.314-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137577,4
-Carrier Configurations,CFG-986,Carrier Compliance (Cc),2025-01-10T04:12:16.690-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136219,2
-Label Refund Manifest,LABEL-2058,Level of Effort (LoE),2024-12-30T06:10:15.076-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135300,1
-Core Enablement,CET-484,Technical Investment (Tech Inv),2025-01-09T12:54:48.615-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/136045,2
-Address-Tracking,ATP-2292,"Unplanned (Bug, Incident, Inquiry)",2025-01-07T10:31:39.110-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134708,2
-Address-Tracking,ATP-2351,"Unplanned (Bug, Incident, Inquiry)",2025-01-08T14:35:36.294-0800,Unplanned,https://shippo.atlassian.net/rest/api/2/issue/135960,2
-Carrier Configurations,CFG-889,Carrier Compliance (Cc),2025-01-06T05:57:30.048-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/133833,2
-Core Enablement,CET-522,Technical Investment (Tech Inv),2025-01-24T04:39:58.796-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137111,4
-Label Refund Manifest,LABEL-1812,Carrier Compliance (Cc),2025-01-24T09:08:14.486-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133008,4
-Rating,RATE-1495,Carrier Compliance (Cc),2025-01-16T17:13:06.085-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136332,3
-Label Refund Manifest,LABEL-2077,Carrier Compliance (Cc),2025-01-07T05:32:56.309-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135549,2
-Core Enablement,CET-489,Technical Investment (Tech Inv),2025-01-14T03:39:27.889-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136468,3
-Rating,RATE-1491,Carrier Compliance (Cc),2025-01-16T16:41:58.751-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136326,3
-Address-Tracking,ATP-2327,"Unplanned (Bug, Incident, Inquiry)",2025-01-21T11:36:09.430-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135457,4
-Carrier Configurations,CFG-762,Technical Investment (Tech Inv),2025-01-08T20:34:11.257-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/131474,2
-Address-Tracking,ATP-2353,Technical Investment (Tech Inv),2025-01-21T11:24:17.583-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136438,4
-Rating,RATE-1582,"Unplanned (Bug, Incident, Inquiry)",2025-01-17T10:47:44.848-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137362,3
-Reconciliation,RECON-738,Team Management (TM),2025-01-10T12:23:42.947-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/127058,2
-Reconciliation,RECON-1063,"Unplanned (Bug, Incident, Inquiry)",2025-01-13T16:26:32.535-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136471,3
-Label Refund Manifest,LABEL-1824,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T13:01:31.343-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/133183,3
-Carrier Configurations,CFG-1006,"Unplanned (Bug, Incident, Inquiry)",2025-01-17T08:06:05.218-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137218,3
-Rating,RATE-1588,Carrier Compliance (Cc),2025-01-17T20:54:30.344-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137418,3
-Address-Tracking,ATP-2354,Team Management (TM),2025-01-17T09:32:26.642-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/136454,3
-Address-Tracking,ATP-2373,"Unplanned (Bug, Incident, Inquiry)",2025-01-24T06:02:31.957-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137008,4
-Rating,RATE-1531,Carrier Compliance (Cc),2025-01-17T15:34:15.562-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136734,3
-Label Refund Manifest,LABEL-2008,"Unplanned (Bug, Incident, Inquiry)",2025-01-09T13:12:15.326-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134823,2
-Rating,RATE-1485,Carrier Compliance (Cc),2025-01-16T16:31:38.730-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136295,3
-Label Refund Manifest,LABEL-2105,"Unplanned (Bug, Incident, Inquiry)",2025-01-03T10:03:36.292-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135736,1
-Reconciliation,RECON-977,Feature - Product Enhancement,2025-01-07T09:09:08.895-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133290,2
-Label Refund Manifest,LABEL-2154,"Unplanned (Bug, Incident, Inquiry)",2025-01-13T03:50:46.173-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136004,3
-Carrier Configurations,CFG-994,Carrier Compliance (Cc),2025-01-23T10:02:55.354-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/136450,4
-Rating,RATE-1501,Carrier Compliance (Cc),2025-01-16T17:48:16.568-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136395,3
-Reconciliation,RECON-1050,Technical Investment (Tech Inv),2025-01-17T10:48:26.538-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136403,3
-Rating,RATE-1440,Team Management (TM),2025-01-21T13:12:30.762-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/135790,4
-Address-Tracking,ATP-2338,Team Management (TM),2025-01-03T07:33:13.297-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/135710,1
-Rating,RATE-1580,Carrier Compliance (Cc),2025-01-17T09:41:24.635-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137349,3
-Address-Tracking,ATP-2340,Team Management (TM),2025-01-03T07:34:53.510-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/135712,1
-Core Enablement,CET-520,Technical Investment (Tech Inv),2025-01-17T03:59:14.956-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136992,3
-Rating,RATE-1542,"Unplanned (Bug, Incident, Inquiry)",2025-01-22T07:45:37.258-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136866,4
-Reconciliation,RECON-823,Team Management (TM),2025-01-10T12:23:52.737-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/129188,2
-Rating,RATE-1566,Carrier Compliance (Cc),2025-01-17T09:39:38.929-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137185,3
-Label Refund Manifest,LABEL-1997,"Unplanned (Bug, Incident, Inquiry)",2024-12-31T04:58:15.000-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134737,1
-Rating,RATE-1443,Carrier Compliance (Cc),2025-01-03T10:22:17.477-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135861,1
-Rating,RATE-1505,Carrier Compliance (Cc),2025-01-17T14:10:19.702-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136444,3
-Rating,RATE-1541,Carrier Compliance (Cc),2025-01-17T16:41:34.193-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136840,3
-Rating,RATE-1560,Carrier Compliance (Cc),2025-01-16T11:10:47.138-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137145,3
-Address-Tracking,ATP-2386,"Unplanned (Bug, Incident, Inquiry)",2025-01-21T11:26:26.827-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137106,4
-Rating,RATE-1345,"Unplanned (Bug, Incident, Inquiry)",2025-01-09T05:32:47.819-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/134635,2
-Carrier Configurations,CFG-1016,Carrier Compliance (Cc),2025-01-24T06:23:47.061-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/137570,4
-Rating,RATE-1529,Carrier Compliance (Cc),2025-01-17T13:30:13.717-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136730,3
-Label Refund Manifest,LABEL-2165,"Unplanned (Bug, Incident, Inquiry)",2025-01-09T13:13:49.078-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136184,2
-Label Refund Manifest,LABEL-1874,"Unplanned (Bug, Incident, Inquiry)",2025-01-03T05:08:29.105-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/133550,1
-Rating,RATE-1509,Carrier Compliance (Cc),2025-01-17T12:32:58.799-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136449,3
-Rating,RATE-1573,Carrier Compliance (Cc),2025-01-17T11:49:08.353-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137233,3
-Address-Tracking,ATP-2336,Carrier Compliance (Cc),2025-01-13T10:07:07.840-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135674,3
-Rating,RATE-1619,Carrier Compliance (Cc),2025-01-24T13:46:53.055-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137881,4
-Label Refund Manifest,LABEL-1722,"Unplanned (Bug, Incident, Inquiry)",2025-01-09T14:58:02.211-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/132292,2
-Rating,RATE-1576,Carrier Compliance (Cc),2025-01-16T13:02:52.680-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137266,3
-Rating,RATE-1327,Team Management (TM),2025-01-21T14:00:31.578-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/134356,4
-Rating,RATE-1474,Team Management (TM),2025-01-06T02:01:40.600-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136212,2
-Reconciliation,RECON-1076,Technical Investment (Tech Inv),2025-01-16T08:45:13.844-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137016,3
-Address-Tracking,ATP-1708,"Unplanned (Bug, Incident, Inquiry)",2025-01-17T11:14:48.053-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/124209,3
-Carrier Configurations,CFG-984,"Unplanned (Bug, Incident, Inquiry)",2025-01-15T13:00:06.549-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136136,3
-Label Refund Manifest,LABEL-2023,"Unplanned (Bug, Incident, Inquiry)",2024-12-30T10:45:55.781-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134923,1
-Rating,RATE-1575,"Unplanned (Bug, Incident, Inquiry)",2025-01-22T10:16:26.463-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137257,4
-Rating,RATE-1457,Carrier Compliance (Cc),2025-01-03T16:33:01.166-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136010,1
-Carrier Configurations,CFG-930,Carrier Compliance (Cc),2025-01-16T06:17:56.718-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134892,3
-Rating,RATE-1477,Carrier Compliance (Cc),2025-01-17T14:43:36.270-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136220,3
-Rating,RATE-1521,"Unplanned (Bug, Incident, Inquiry)",2025-01-09T11:13:52.635-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136644,2
-Rating,RATE-1449,"Unplanned (Bug, Incident, Inquiry)",2025-01-06T14:58:57.247-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135966,2
-Rating,RATE-1552,Carrier Compliance (Cc),2025-01-14T17:42:03.799-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137029,3
-Rating,RATE-1506,Carrier Compliance (Cc),2025-01-17T13:51:58.601-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136446,3
-Label Refund Manifest,LABEL-1990,"Unplanned (Bug, Incident, Inquiry)",2025-01-02T04:51:42.105-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134617,1
-Rating,RATE-1467,Carrier Compliance (Cc),2025-01-03T10:49:36.192-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136100,1
-Reconciliation,RECON-1052,"Unplanned (Bug, Incident, Inquiry)",2025-01-24T14:15:56.159-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136406,4
-Rating,RATE-1564,Carrier Compliance (Cc),2025-01-17T09:35:33.020-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137175,3
-Rating,RATE-1525,Carrier Compliance (Cc),2025-01-17T16:01:32.224-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136693,3
-Rating,RATE-1589,Technical Investment (Tech Inv),2025-01-23T10:47:49.961-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137571,4
-Carrier Configurations,CFG-998,Carrier Compliance (Cc),2025-01-21T05:37:38.032-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/136894,4
-Rating,RATE-1334,Team Management (TM),2025-01-17T06:47:59.525-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/134489,3
-Core Enablement,CET-527,"Unplanned (Bug, Incident, Inquiry)",2025-01-24T07:07:34.205-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137930,4
-Rating,RATE-1544,"Unplanned (Bug, Incident, Inquiry)",2025-01-14T14:50:26.489-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136961,3
-Address-Tracking,ATP-1086,Carrier Compliance (Cc),2025-01-05T10:22:57.025-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/113294,1
-Core Enablement,CET-518,"Unplanned (Bug, Incident, Inquiry)",2025-01-10T11:09:45.480-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136790,2
-Address-Tracking,ATP-2404,"Unplanned (Bug, Incident, Inquiry)",2025-01-21T11:27:34.775-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137564,4
-Rating,RATE-1548,Technical Investment (Tech Inv),2025-01-14T06:07:44.155-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136990,3
-Address-Tracking,ATP-2262,Partner Commitment (Pc),2025-01-21T11:25:40.338-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/134025,4
-Rating,RATE-1561,Carrier Compliance (Cc),2025-01-15T13:51:59.822-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137152,3
-Rating,RATE-1447,Carrier Compliance (Cc),2025-01-02T14:05:39.222-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135952,1
-Rating,RATE-1523,Carrier Compliance (Cc),2025-01-16T21:28:58.503-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136686,3
-Carrier Configurations,CFG-883,Carrier Compliance (Cc),2025-01-08T06:48:33.496-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/133767,2
-Label Refund Manifest,LABEL-2003,Technical Investment (Tech Inv),2025-01-22T09:12:55.269-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/134775,4
-Core Enablement,CET-486,Technical Investment (Tech Inv),2025-01-10T05:37:37.420-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136155,2
-Rating,RATE-1502,Carrier Compliance (Cc),2025-01-16T21:15:02.790-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136441,3
-Rating,RATE-1579,Carrier Compliance (Cc),2025-01-17T13:44:50.560-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137289,3
-Rating,RATE-1511,Carrier Compliance (Cc),2025-01-13T16:42:27.087-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136530,3
-Address-Tracking,ATP-2339,Team Management (TM),2025-01-10T09:13:23.501-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/135711,2
-Address-Tracking,ATP-2330,Partner Commitment (Pc),2025-01-21T10:53:07.503-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135521,4
-Carrier Configurations,CFG-1003,Carrier Compliance (Cc),2025-01-23T10:02:39.957-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/137156,4
-Rating,RATE-1446,Carrier Compliance (Cc),2025-01-03T16:32:28.765-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135944,1
-Carrier Configurations,CFG-967,Technical Investment (Tech Inv),2025-01-02T14:10:53.683-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135490,1
-Reconciliation,RECON-1081,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T14:40:28.421-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137173,3
-Carrier Configurations,CFG-1015,"Unplanned (Bug, Incident, Inquiry)",2025-01-23T09:56:26.657-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137526,4
-Address-Tracking,ATP-2343,"Unplanned (Bug, Incident, Inquiry)",2025-01-06T07:49:12.940-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135721,2
-Address-Tracking,ATP-2363,"Unplanned (Bug, Incident, Inquiry)",2025-01-13T10:16:20.449-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136776,3
-Rating,RATE-1478,Carrier Compliance (Cc),2025-01-17T15:09:56.520-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136221,3
-Rating,RATE-1419,Carrier Compliance (Cc),2025-01-02T10:21:11.807-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135441,1
-Core Enablement,CET-481,Technical Investment (Tech Inv),2025-01-10T05:31:18.261-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135686,2
-Rating,RATE-1415,Carrier Compliance (Cc),2025-01-02T10:21:09.393-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135437,1
-Reconciliation,RECON-979,Feature - Product Enhancement,2025-01-22T09:05:25.891-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133292,4
-Reconciliation,RECON-1034,"Unplanned (Bug, Incident, Inquiry)",2025-01-06T14:15:27.336-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135820,2
-Address-Tracking,ATP-2310,"Unplanned (Bug, Incident, Inquiry)",2025-01-02T09:16:31.072-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135018,1
-Rating,RATE-1515,"Unplanned (Bug, Incident, Inquiry)",2025-01-13T10:02:55.390-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136566,3
-Label Refund Manifest,LABEL-1833,Technical Investment (Tech Inv),2025-01-10T11:44:57.297-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133264,2
-Rating,RATE-1326,"Unplanned (Bug, Incident, Inquiry)",2025-01-17T10:47:03.224-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134350,3
-Address-Tracking,ATP-2361,"Unplanned (Bug, Incident, Inquiry)",2025-01-21T12:48:11.680-0800,Unplanned,https://shippo.atlassian.net/rest/api/2/issue/136733,4
-Rating,RATE-1499,Carrier Compliance (Cc),2025-01-16T20:52:49.847-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136393,3
-Address-Tracking,ATP-2305,Partner Commitment (Pc),2025-01-10T08:26:20.227-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/134846,2
-Address-Tracking,ATP-2371,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T09:42:23.443-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136987,3
-Rating,RATE-1624,Team Management (TM),2025-01-24T07:54:42.114-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137924,4
-Rating,RATE-1472,"Unplanned (Bug, Incident, Inquiry)",2025-01-22T09:58:48.859-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136151,4
-Carrier Configurations,CFG-968,Technical Investment (Tech Inv),2025-01-13T06:35:24.502-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135491,3
-Rating,RATE-1496,Carrier Compliance (Cc),2025-01-16T17:28:47.562-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136344,3
-Label Refund Manifest,LABEL-2151,"Unplanned (Bug, Incident, Inquiry)",2025-01-21T13:14:52.796-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135977,4
-Address-Tracking,ATP-2049,Carrier Compliance (Cc),2025-01-10T03:18:52.016-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/130548,2
-Rating,RATE-648,Carrier Compliance (Cc),2025-01-06T06:28:35.795-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/119942,2
-Address-Tracking,ATP-2314,Partner Commitment (Pc),2025-01-21T11:25:10.367-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135147,4
-Label Refund Manifest,LABEL-2110,Technical Investment (Tech Inv),2025-01-10T08:33:28.796-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135763,2
-Label Refund Manifest,LABEL-2233,"Unplanned (Bug, Incident, Inquiry)",2025-01-15T08:56:50.390-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136878,3
-Carrier Configurations,CFG-1004,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T04:39:30.453-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137194,3
-Rating,RATE-1466,Carrier Compliance (Cc),2025-01-03T10:22:50.836-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136078,1
-Rating,RATE-1513,Carrier Compliance (Cc),2025-01-13T13:02:49.100-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136536,3
-Address-Tracking,ATP-2048,Carrier Compliance (Cc),2025-01-09T09:38:49.025-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/130543,2
-Rating,RATE-1507,Carrier Compliance (Cc),2025-01-17T12:33:04.200-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136447,3
-Label Refund Manifest,LABEL-2160,"Unplanned (Bug, Incident, Inquiry)",2025-01-05T21:45:44.691-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136076,2
+project,issue_key,category,resolved,type,url,lead_time_hours,week
+Core Enablement,CET-527,"Unplanned (Bug, Incident, Inquiry)",2025-01-24T07:07:34.205-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137930,0.0005413888888888889,4
+Carrier Configurations,CFG-883,Carrier Compliance (Cc),2025-01-08T06:48:33.496-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/133767,120.66354833333332,2
+Rating,RATE-1463,Carrier Compliance (Cc),2025-01-17T11:48:58.508-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136074,264.12071777777777,3
+Label Refund Manifest,LABEL-1722,"Unplanned (Bug, Incident, Inquiry)",2025-01-09T14:58:02.211-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/132292,1348.6229725,2
+Rating,RATE-1561,Carrier Compliance (Cc),2025-01-15T13:51:59.822-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137152,1.9943875,3
+Rating,RATE-1546,"Unplanned (Bug, Incident, Inquiry)",2025-01-24T15:23:47.103-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136967,,4
+Rating,RATE-1449,"Unplanned (Bug, Incident, Inquiry)",2025-01-06T14:58:57.247-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135966,98.50262833333333,2
+Label Refund Manifest,LABEL-1715,"Unplanned (Bug, Incident, Inquiry)",2025-01-22T16:40:46.205-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/132241,0.11215916666666667,4
+Address-Tracking,ATP-2333,"Unplanned (Bug, Incident, Inquiry)",2025-01-02T07:29:51.307-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135588,241.40913666666665,1
+Carrier Configurations,CFG-946,Carrier Compliance (Cc),2025-01-21T16:50:23.844-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135155,154.51062861111112,4
+Reconciliation,RECON-823,Team Management (TM),2025-01-10T12:23:52.737-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/129188,,2
+Rating,RATE-1487,Carrier Compliance (Cc),2025-01-16T16:00:34.341-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136322,220.23622194444442,3
+Label Refund Manifest,LABEL-2081,"Unplanned (Bug, Incident, Inquiry)",2025-01-09T13:11:27.168-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135584,,2
+Address-Tracking,ATP-2330,Partner Commitment (Pc),2025-01-21T10:53:07.503-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135521,456.9330655555556,4
+Label Refund Manifest,LABEL-2283,"Unplanned (Bug, Incident, Inquiry)",2025-01-17T12:46:03.453-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137278,22.185967499999997,3
+Reconciliation,RECON-843,Team Management (TM),2025-01-10T12:23:15.931-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/129655,,2
+Address-Tracking,ATP-1075,Carrier Compliance (Cc),2025-01-06T07:59:43.325-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/113191,497.11601527777776,2
+Label Refund Manifest,LABEL-2151,"Unplanned (Bug, Incident, Inquiry)",2025-01-21T13:14:52.796-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135977,311.1647330555556,4
+Rating,RATE-1440,Team Management (TM),2025-01-21T13:12:30.762-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/135790,670.1644247222222,4
+Carrier Configurations,CFG-1005,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T04:48:49.745-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137196,0.0008627777777777777,3
+Rating,RATE-1568,Carrier Compliance (Cc),2025-01-17T17:19:14.057-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137192,,3
+Reconciliation,RECON-1078,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T09:08:28.324-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137050,,3
+Rating,RATE-1509,Carrier Compliance (Cc),2025-01-17T12:32:58.799-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136449,212.64207222222223,3
+Carrier Configurations,CFG-928,"Unplanned (Bug, Incident, Inquiry)",2025-01-09T16:47:27.152-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134872,53.86568166666667,2
+Rating,RATE-1489,Carrier Compliance (Cc),2025-01-17T16:06:01.832-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136324,241.18805999999998,3
+Address-Tracking,ATP-2341,Team Management (TM),2025-01-10T09:13:43.663-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/135713,169.68337055555554,2
+Rating,RATE-1581,Technical Investment (Tech Inv),2025-01-17T09:44:38.222-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137350,,3
+Rating,RATE-1553,Carrier Compliance (Cc),2025-01-17T09:37:05.840-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137030,70.81412861111112,3
+Carrier Configurations,CFG-761,Technical Investment (Tech Inv),2025-01-07T07:49:19.333-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/131473,492.3177738888889,2
+Core Enablement,CET-516,Technical Investment (Tech Inv),2025-01-15T08:34:36.389-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136744,51.45040916666667,3
+Label Refund Manifest,LABEL-1923,Carrier Compliance (Cc),2025-01-15T08:56:39.511-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/134036,820.8436572222223,3
+Reconciliation,RECON-1004,Feature - Product Enhancement,2025-01-24T09:04:57.485-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/134645,192.35072694444443,4
+Rating,RATE-1573,Carrier Compliance (Cc),2025-01-17T11:49:08.353-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137233,22.378984722222224,3
+Label Refund Manifest,LABEL-2153,Technical Investment (Tech Inv),2025-01-17T05:45:45.266-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135999,352.28349000000003,3
+Reconciliation,RECON-1050,Technical Investment (Tech Inv),2025-01-17T10:48:26.538-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136403,97.93160777777778,3
+Rating,RATE-1624,Team Management (TM),2025-01-24T07:54:42.114-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137924,3.1362319444444444,4
+Reconciliation,RECON-1063,"Unplanned (Bug, Incident, Inquiry)",2025-01-13T16:26:32.535-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136471,127.118595,3
+Rating,RATE-1036,"Unplanned (Bug, Incident, Inquiry)",2025-01-07T06:40:25.565-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/130668,1260.685953888889,2
+Rating,RATE-1468,Carrier Compliance (Cc),2025-01-03T10:50:39.397-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136105,,1
+Address-Tracking,ATP-2338,Team Management (TM),2025-01-03T07:33:13.297-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/135710,22.106203055555557,1
+Rating,RATE-1559,Carrier Compliance (Cc),2025-01-15T15:38:33.665-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137139,4.881372222222222,3
+Carrier Configurations,CFG-968,Technical Investment (Tech Inv),2025-01-13T06:35:24.502-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135491,477.2193130555556,3
+Rating,RATE-1504,Carrier Compliance (Cc),2025-01-17T13:52:23.063-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136443,216.6493663888889,3
+Address-Tracking,ATP-2396,"Unplanned (Bug, Incident, Inquiry)",2025-01-21T11:26:15.541-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137274,117.41930944444445,4
+Rating,RATE-1490,Carrier Compliance (Cc),2025-01-16T16:25:08.534-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136325,218.19816888888892,3
+Reconciliation,RECON-1056,Technical Investment (Tech Inv),2025-01-23T09:37:01.489-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136411,72.55947694444444,4
+Address-Tracking,ATP-2305,Partner Commitment (Pc),2025-01-10T08:26:20.227-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/134846,531.2509311111111,2
+Rating,RATE-1327,Team Management (TM),2025-01-21T14:00:31.578-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/134356,0.009199722222222222,4
+Rating,RATE-1589,Technical Investment (Tech Inv),2025-01-23T10:47:49.961-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137571,24.76182277777778,4
+Rating,RATE-1495,Carrier Compliance (Cc),2025-01-16T17:13:06.085-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136332,201.63166083333334,3
+Rating,RATE-1519,Carrier Compliance (Cc),2025-01-09T13:31:51.225-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136640,1.8596894444444443,2
+Rating,RATE-1532,Carrier Compliance (Cc),2025-01-17T15:40:37.713-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136735,170.80805194444443,3
+Label Refund Manifest,LABEL-2154,"Unplanned (Bug, Incident, Inquiry)",2025-01-13T03:50:46.173-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136004,139.12941138888888,3
+Rating,RATE-1500,Carrier Compliance (Cc),2025-01-16T18:01:38.992-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136394,216.68750388888887,3
+Carrier Configurations,CFG-986,Carrier Compliance (Cc),2025-01-10T04:12:16.690-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136219,87.98110722222222,2
+Rating,RATE-1601,Level of Effort (LoE),2025-01-22T14:10:12.268-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137752,0.0004733333333333333,4
+Reconciliation,RECON-1005,Feature - Product Enhancement,2025-01-24T10:46:04.432-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/134646,271.5807902777778,4
+Address-Tracking,ATP-2292,"Unplanned (Bug, Incident, Inquiry)",2025-01-07T10:31:39.110-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134708,641.1099680555554,2
+Address-Tracking,ATP-2201,Team Management (TM),2025-01-21T09:21:53.608-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/132994,189.34698,4
+Rating,RATE-1505,Carrier Compliance (Cc),2025-01-17T14:10:19.702-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136444,214.50786416666665,3
+Label Refund Manifest,LABEL-2047,"Unplanned (Bug, Incident, Inquiry)",2025-01-06T10:21:10.341-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135161,340.7322938888889,2
+Carrier Configurations,CFG-966,Technical Investment (Tech Inv),2025-01-02T06:22:24.127-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135488,311.8767575,1
+Address-Tracking,ATP-2354,Team Management (TM),2025-01-17T09:32:26.642-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/136454,163.6881038888889,3
+Address-Tracking,ATP-2340,Team Management (TM),2025-01-03T07:34:53.510-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/135712,22.13266722222222,1
+Address-Tracking,ATP-2351,"Unplanned (Bug, Incident, Inquiry)",2025-01-08T14:35:36.294-0800,Unplanned,https://shippo.atlassian.net/rest/api/2/issue/135960,127.6138725,2
+Carrier Configurations,CFG-930,Carrier Compliance (Cc),2025-01-16T06:17:56.718-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134892,67.65424722222222,3
+Rating,RATE-1476,Carrier Compliance (Cc),2025-01-17T11:44:27.415-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136218,264.54281444444445,3
+Label Refund Manifest,LABEL-2110,Technical Investment (Tech Inv),2025-01-10T08:33:28.796-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135763,85.57030555555555,2
+Label Refund Manifest,LABEL-2314,"Unplanned (Bug, Incident, Inquiry)",2025-01-22T09:32:30.571-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137590,20.438946388888887,4
+Label Refund Manifest,LABEL-1499,"Unplanned (Bug, Incident, Inquiry)",2025-01-06T13:46:20.604-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/130368,1446.8155575,2
+Carrier Configurations,CFG-987,Carrier Compliance (Cc),2025-01-14T05:51:13.298-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/136237,18.558452777777777,3
+Rating,RATE-1587,Carrier Compliance (Cc),2025-01-17T16:57:04.928-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/137395,1.887842777777778,3
+Core Enablement,CET-518,"Unplanned (Bug, Incident, Inquiry)",2025-01-10T11:09:45.480-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136790,0.00042805555555555555,2
+Rating,RATE-1564,Carrier Compliance (Cc),2025-01-17T09:35:33.020-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137175,3.6612919444444443,3
+Label Refund Manifest,LABEL-2023,"Unplanned (Bug, Incident, Inquiry)",2024-12-30T10:45:55.781-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134923,344.25420333333335,1
+Carrier Configurations,CFG-1013,"Unplanned (Bug, Incident, Inquiry)",2025-01-24T06:28:49.869-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137444,,4
+Reconciliation,RECON-1051,Technical Investment (Tech Inv),2025-01-17T10:48:23.443-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136404,167.73685583333332,3
+Rating,RATE-1415,Carrier Compliance (Cc),2025-01-02T10:21:09.393-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135437,332.42937,1
+Carrier Configurations,CFG-1003,Carrier Compliance (Cc),2025-01-23T10:02:39.957-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/137156,189.97239861111112,4
+Rating,RATE-1542,"Unplanned (Bug, Incident, Inquiry)",2025-01-22T07:45:37.258-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136866,213.35594583333335,4
+Rating,RATE-1472,"Unplanned (Bug, Incident, Inquiry)",2025-01-22T09:58:48.859-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136151,19.878313888888886,4
+Address-Tracking,ATP-2348,Technical Investment (Tech Inv),2025-01-09T05:21:56.045-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135787,375.52378194444447,2
+Reconciliation,RECON-979,Feature - Product Enhancement,2025-01-22T09:05:25.891-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133292,216.0163875,4
+Reconciliation,RECON-1081,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T14:40:28.421-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137173,,3
+Label Refund Manifest,LABEL-1824,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T13:01:31.343-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/133183,918.4738741666667,3
+Carrier Configurations,CFG-1001,"Unplanned (Bug, Incident, Inquiry)",2025-01-15T07:20:15.723-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137064,0.33771333333333337,3
+Rating,RATE-1501,Carrier Compliance (Cc),2025-01-16T17:48:16.568-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136395,216.46110555555555,3
+Carrier Configurations,CFG-973,Technical Investment (Tech Inv),2025-01-02T06:22:28.623-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135637,235.02364972222222,1
+Rating,RATE-1572,Carrier Compliance (Cc),2025-01-17T09:04:01.728-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/137216,23.850616388888888,3
+Label Refund Manifest,LABEL-2105,"Unplanned (Bug, Incident, Inquiry)",2025-01-03T10:03:36.292-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135736,257.1673772222222,1
+Rating,RATE-1518,"Unplanned (Bug, Incident, Inquiry)",2025-01-09T12:08:11.424-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136618,1.9292294444444444,2
+Rating,RATE-1458,Team Management (TM),2025-01-08T14:58:33.319-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136034,,2
+Address-Tracking,ATP-2049,Carrier Compliance (Cc),2025-01-10T03:18:52.016-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/130548,166.0175761111111,2
+Rating,RATE-1447,Carrier Compliance (Cc),2025-01-02T14:05:39.222-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135952,3.7132244444444447,1
+Core Enablement,CET-491,Technical Investment (Tech Inv),2025-01-17T03:59:08.693-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136470,19.918787499999997,3
+Reconciliation,RECON-1052,"Unplanned (Bug, Incident, Inquiry)",2025-01-24T14:15:56.159-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136406,339.77285,4
+Rating,RATE-1492,Carrier Compliance (Cc),2025-01-16T16:50:04.000-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136327,208.66995194444445,3
+Address-Tracking,ATP-1586,Carrier Compliance (Cc),2025-01-09T08:13:13.107-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/121565,3831.9554036111113,2
+Carrier Configurations,CFG-1006,"Unplanned (Bug, Incident, Inquiry)",2025-01-17T08:06:05.218-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137218,10.115331666666668,3
+Label Refund Manifest,LABEL-2060,Level of Effort (LoE),2025-01-06T04:03:03.222-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135303,143.68179999999998,2
+Address-Tracking,ATP-2373,"Unplanned (Bug, Incident, Inquiry)",2025-01-24T06:02:31.957-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137008,236.77494694444445,4
+Label Refund Manifest,LABEL-2324,Technical Investment (Tech Inv),2025-01-24T09:09:07.097-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137712,,4
+Carrier Configurations,CFG-889,Carrier Compliance (Cc),2025-01-06T05:57:30.048-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/133833,625.7901274999999,2
+Carrier Configurations,CFG-967,Technical Investment (Tech Inv),2025-01-02T14:10:53.683-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135490,359.3104661111111,1
+Rating,RATE-1496,Carrier Compliance (Cc),2025-01-16T17:28:47.562-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136344,204.85168694444442,3
+Rating,RATE-1362,"Unplanned (Bug, Incident, Inquiry)",2025-01-08T10:04:34.656-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134805,,2
+Carrier Configurations,CFG-898,Carrier Compliance (Cc),2025-01-06T10:14:34.171-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134083,737.3876436111111,2
+Address-Tracking,ATP-2310,"Unplanned (Bug, Incident, Inquiry)",2025-01-02T09:16:31.072-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135018,215.9710225,1
+Label Refund Manifest,LABEL-1929,Carrier Compliance (Cc),2025-01-15T08:56:40.309-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/134069,555.5929494444445,3
+Rating,RATE-1535,Technical Investment (Tech Inv),2025-01-23T07:57:29.467-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136759,308.27171694444445,4
+Reconciliation,RECON-1029,"Unplanned (Bug, Incident, Inquiry)",2025-01-07T09:04:51.924-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135705,119.8023825,2
+Rating,RATE-1620,Carrier Compliance (Cc),2025-01-24T12:03:20.794-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137887,0.6002830555555555,4
+Carrier Configurations,CFG-994,Carrier Compliance (Cc),2025-01-23T10:02:55.354-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/136450,245.01788194444444,4
+Rating,RATE-1531,Carrier Compliance (Cc),2025-01-17T15:34:15.562-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136734,169.8187775,3
+Reconciliation,RECON-963,Feature - Product Enhancement,2025-01-03T09:04:25.059-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133209,27.024850833333335,1
+Carrier Configurations,CFG-974,Technical Investment (Tech Inv),2025-01-02T06:22:30.589-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135640,216.46914611111112,1
+Address-Tracking,ATP-2392,"Unplanned (Bug, Incident, Inquiry)",2025-01-21T11:25:44.493-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137172,141.70660083333334,4
+Rating,RATE-1419,Carrier Compliance (Cc),2025-01-02T10:21:11.807-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135441,214.42663805555554,1
+Label Refund Manifest,LABEL-2210,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T06:43:28.763-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136678,46.82288111111111,3
+Rating,RATE-1475,Carrier Compliance (Cc),2025-01-17T16:06:35.917-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136217,265.3089366666667,3
+Rating,RATE-1539,Carrier Compliance (Cc),2025-01-13T17:01:16.696-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136782,71.34910972222222,3
+Reconciliation,RECON-1036,"Unplanned (Bug, Incident, Inquiry)",2025-01-08T09:06:29.078-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136072,45.91210472222222,2
+Rating,RATE-1534,Team Management (TM),2025-01-11T16:55:28.850-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136751,32.453649722222224,2
+Core Enablement,CET-437,Technical Investment (Tech Inv),2025-01-10T05:37:56.506-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133870,70.6017761111111,2
+Rating,RATE-1526,Carrier Compliance (Cc),2025-01-17T13:10:05.469-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136700,169.7167988888889,3
+Rating,RATE-1494,Carrier Compliance (Cc),2025-01-17T13:52:14.838-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136331,236.3237988888889,3
+Label Refund Manifest,LABEL-2195,Carrier Compliance (Cc),2025-01-22T09:13:00.769-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136464,,4
+Rating,RATE-650,Carrier Compliance (Cc),2025-01-23T10:53:16.802-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/119945,336.37089555555553,4
+Address-Tracking,ATP-1977,"Unplanned (Bug, Incident, Inquiry)",2025-01-13T10:20:29.401-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/129225,0.005638333333333333,3
+Label Refund Manifest,LABEL-1832,Level of Effort (LoE),2025-01-22T10:27:26.079-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133258,221.64118194444444,4
+Label Refund Manifest,LABEL-1833,Technical Investment (Tech Inv),2025-01-10T11:44:57.297-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133264,844.2529233333333,2
+Rating,RATE-649,Carrier Compliance (Cc),2025-01-24T06:35:50.869-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/119943,432.1028338888889,4
+Address-Tracking,ATP-2369,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T09:42:55.523-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136864,72.14579888888889,3
+Rating,RATE-1225,"Unplanned (Bug, Incident, Inquiry)",2025-01-02T14:52:00.200-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/133135,892.420978888889,1
+Carrier Configurations,CFG-991,"Unplanned (Bug, Incident, Inquiry)",2025-01-23T08:43:37.814-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136330,361.6704625,4
+Carrier Configurations,CFG-943,Carrier Compliance (Cc),2025-01-17T05:53:28.644-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/135125,72.03281305555556,3
+Rating,RATE-1467,Carrier Compliance (Cc),2025-01-03T10:49:36.192-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136100,,1
+Rating,RATE-1576,Carrier Compliance (Cc),2025-01-16T13:02:52.680-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137266,,3
+Rating,RATE-1584,Carrier Compliance (Cc),2025-01-17T16:41:44.537-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137388,2.839659722222222,3
+Rating,RATE-1527,Carrier Compliance (Cc),2025-01-16T17:41:02.405-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136728,31.584918055555555,3
+Rating,RATE-1580,Carrier Compliance (Cc),2025-01-17T09:41:24.635-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137349,,3
+Rating,RATE-1359,Team Management (TM),2025-01-22T14:50:24.447-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/134727,986.6630447222223,4
+Rating,RATE-1444,"Unplanned (Bug, Incident, Inquiry)",2025-01-03T08:46:03.239-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135922,38.08380638888889,1
+Reconciliation,RECON-1076,Technical Investment (Tech Inv),2025-01-16T08:45:13.844-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137016,48.10523333333333,3
+Rating,RATE-1498,Carrier Compliance (Cc),2025-01-17T13:16:46.978-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136391,212.6359161111111,3
+Address-Tracking,ATP-2352,"Unplanned (Bug, Incident, Inquiry)",2025-01-21T13:43:54.019-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136372,314.7603316666666,4
+Label Refund Manifest,LABEL-2165,"Unplanned (Bug, Incident, Inquiry)",2025-01-09T13:13:49.078-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136184,,2
+Rating,RATE-1334,Team Management (TM),2025-01-17T06:47:59.525-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/134489,910.5677597222223,3
+Core Enablement,CET-486,Technical Investment (Tech Inv),2025-01-10T05:37:37.420-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136155,96.49055222222222,2
+Rating,RATE-1474,Team Management (TM),2025-01-06T02:01:40.600-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136212,2.8075505555555558,2
+Rating,RATE-1507,Carrier Compliance (Cc),2025-01-17T12:33:04.200-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136447,215.18139055555557,3
+Carrier Configurations,CFG-985,"Unplanned (Bug, Incident, Inquiry)",2025-01-07T12:39:12.847-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136157,3.972212777777778,2
+Core Enablement,CET-489,Technical Investment (Tech Inv),2025-01-14T03:39:27.889-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136468,22.82538527777778,3
+Rating,RATE-1524,Carrier Compliance (Cc),2025-01-17T12:45:53.885-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136687,170.33104055555557,3
+Carrier Configurations,CFG-992,Carrier Compliance (Cc),2025-01-16T06:06:24.345-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136373,137.03992805555555,3
+Rating,RATE-1575,"Unplanned (Bug, Incident, Inquiry)",2025-01-22T10:16:26.463-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137257,141.31828000000002,4
+Address-Tracking,ATP-2366,Team Management (TM),2025-01-17T09:33:09.894-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/136816,163.6975072222222,3
+Core Enablement,CET-522,Technical Investment (Tech Inv),2025-01-24T04:39:58.796-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137111,212.44749694444442,4
+Address-Tracking,ATP-1584,Carrier Compliance (Cc),2025-01-16T09:43:07.468-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/121563,1394.5593980555554,3
+Address-Tracking,ATP-2358,"Unplanned (Bug, Incident, Inquiry)",2025-01-10T03:26:09.490-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136537,15.424191944444445,2
+Rating,RATE-1512,Carrier Compliance (Cc),2025-01-10T14:57:06.255-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136531,25.407800277777778,2
+Rating,RATE-1479,Technical Investment (Tech Inv),2025-01-23T08:30:21.214-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136225,0.26876777777777777,4
+Rating,RATE-1394,"Unplanned (Bug, Incident, Inquiry)",2025-01-10T10:48:21.863-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135184,570.7436258333333,2
+Reconciliation,RECON-1031,"Unplanned (Bug, Incident, Inquiry)",2025-01-09T10:43:35.069-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135716,22.122193333333332,2
+Rating,RATE-1544,"Unplanned (Bug, Incident, Inquiry)",2025-01-14T14:50:26.489-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136961,25.15259277777778,3
+Address-Tracking,ATP-2336,Carrier Compliance (Cc),2025-01-13T10:07:07.840-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135674,478.6463913888889,3
+Label Refund Manifest,LABEL-2271,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T10:45:58.773-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137200,,3
+Rating,RATE-1588,Carrier Compliance (Cc),2025-01-17T20:54:30.344-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137418,,3
+Core Enablement,CET-504,Technical Investment (Tech Inv),2025-01-24T04:38:43.100-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136492,212.51498222222222,4
+Rating,RATE-1446,Carrier Compliance (Cc),2025-01-03T16:32:28.765-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135944,25.673305,1
+Rating,RATE-1514,"Unplanned (Bug, Incident, Inquiry)",2025-01-09T05:34:37.832-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136565,,2
+Reconciliation,RECON-1088,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T15:03:40.706-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137273,1.1126183333333333,3
+Address-Tracking,ATP-2404,"Unplanned (Bug, Incident, Inquiry)",2025-01-21T11:27:34.775-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137564,1.164305,4
+Rating,RATE-1510,Technical Investment (Tech Inv),2025-01-15T07:55:49.978-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136515,0.00046750000000000003,3
+Rating,RATE-1477,Carrier Compliance (Cc),2025-01-17T14:43:36.270-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136220,265.0357955555555,3
+Reconciliation,RECON-964,Feature - Product Enhancement,2025-01-06T09:08:12.619-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133210,94.2603125,2
+Address-Tracking,ATP-2327,"Unplanned (Bug, Incident, Inquiry)",2025-01-21T11:36:09.430-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135457,695.9121200000001,4
+Reconciliation,RECON-1048,Technical Investment (Tech Inv),2025-01-16T12:49:47.120-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136401,147.87791055555556,3
+Rating,RATE-1551,Technical Investment (Tech Inv),2025-01-14T17:49:10.138-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137025,,3
+Address-Tracking,ATP-2350,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T09:42:07.118-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135947,139.8153638888889,3
+Rating,RATE-1466,Carrier Compliance (Cc),2025-01-03T10:22:50.836-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136078,,1
+Label Refund Manifest,LABEL-1812,Carrier Compliance (Cc),2025-01-24T09:08:14.486-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133008,1393.400378888889,4
+Rating,RATE-1529,Carrier Compliance (Cc),2025-01-17T13:30:13.717-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136730,93.65940444444445,3
+Reconciliation,RECON-986,Technical Investment (Tech Inv),2025-01-21T07:26:24.134-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133663,258.28082722222223,4
+Address-Tracking,ATP-2343,"Unplanned (Bug, Incident, Inquiry)",2025-01-06T07:49:12.940-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135721,308.36517055555555,2
+Address-Tracking,ATP-2402,Partner Commitment (Pc),2025-01-23T11:07:03.983-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137409,138.45454944444444,4
+Label Refund Manifest,LABEL-2199,Technical Investment (Tech Inv),2025-01-16T10:45:38.201-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136519,144.01120388888887,3
+Rating,RATE-1525,Carrier Compliance (Cc),2025-01-17T16:01:32.224-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136693,172.20431222222223,3
+Label Refund Manifest,LABEL-2003,Technical Investment (Tech Inv),2025-01-22T09:12:55.269-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/134775,191.9412286111111,4
+Rating,RATE-1513,Carrier Compliance (Cc),2025-01-13T13:02:49.100-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136536,67.36231666666667,3
+Address-Tracking,ATP-2306,Technical Investment (Tech Inv),2025-01-10T08:03:21.752-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/134883,41.13749472222222,2
+Rating,RATE-1491,Carrier Compliance (Cc),2025-01-16T16:41:58.751-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136326,215.76401527777776,3
+Rating,RATE-1488,Carrier Compliance (Cc),2025-01-16T14:56:38.273-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136323,218.2729858333333,3
+Rating,RATE-1493,Carrier Compliance (Cc),2025-01-17T16:00:46.611-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136328,224.902605,3
+Rating,RATE-1609,Carrier Compliance (Cc),2025-01-24T11:10:15.676-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137840,0.14464333333333335,4
+Carrier Configurations,CFG-998,Carrier Compliance (Cc),2025-01-21T05:37:38.032-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/136894,114.4597225,4
+Carrier Configurations,CFG-984,"Unplanned (Bug, Incident, Inquiry)",2025-01-15T13:00:06.549-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136136,196.97054083333336,3
+Rating,RATE-1502,Carrier Compliance (Cc),2025-01-16T21:15:02.790-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136441,205.66357416666665,3
+Rating,RATE-1471,Carrier Compliance (Cc),2025-01-17T16:02:52.208-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136143,336.55453777777774,3
+Carrier Configurations,CFG-970,Technical Investment (Tech Inv),2025-01-02T06:22:26.359-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135516,239.1706511111111,1
+Rating,RATE-1521,"Unplanned (Bug, Incident, Inquiry)",2025-01-09T11:13:52.635-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136644,,2
+Rating,RATE-1497,Carrier Compliance (Cc),2025-01-16T21:43:09.018-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136347,227.89839,3
+Reconciliation,RECON-959,Feature - Product Enhancement,2025-01-07T12:15:41.119-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133204,271.5589483333333,2
+Core Enablement,CET-481,Technical Investment (Tech Inv),2025-01-10T05:31:18.261-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135686,186.3443163888889,2
+Core Enablement,CET-520,Technical Investment (Tech Inv),2025-01-17T03:59:14.956-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136992,69.74934833333333,3
+Label Refund Manifest,LABEL-1987,"Unplanned (Bug, Incident, Inquiry)",2025-01-10T08:29:21.569-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134605,98.55148694444445,2
+Carrier Configurations,CFG-762,Technical Investment (Tech Inv),2025-01-08T20:34:11.257-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/131474,154.55144583333333,2
+Core Enablement,CET-503,Technical Investment (Tech Inv),2025-01-23T16:49:10.271-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136491,148.49887694444445,4
+Label Refund Manifest,LABEL-2058,Level of Effort (LoE),2024-12-30T06:10:15.076-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135300,507.56967,1
+Label Refund Manifest,LABEL-1874,"Unplanned (Bug, Incident, Inquiry)",2025-01-03T05:08:29.105-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/133550,,1
+Address-Tracking,ATP-2371,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T09:42:23.443-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136987,49.21702444444445,3
+Rating,RATE-1548,Technical Investment (Tech Inv),2025-01-14T06:07:44.155-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136990,,3
+Label Refund Manifest,LABEL-2077,Carrier Compliance (Cc),2025-01-07T05:32:56.309-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135549,,2
+Rating,RATE-1443,Carrier Compliance (Cc),2025-01-03T10:22:17.477-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135861,,1
+Address-Tracking,ATP-2386,"Unplanned (Bug, Incident, Inquiry)",2025-01-21T11:26:26.827-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137106,96.74323222222222,4
+Rating,RATE-1464,"Unplanned (Bug, Incident, Inquiry)",2025-01-05T21:42:46.538-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136075,,2
+Address-Tracking,ATP-1086,Carrier Compliance (Cc),2025-01-05T10:22:57.025-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/113294,574.7489602777778,1
+Reconciliation,RECON-1098,Technical Investment (Tech Inv),2025-01-23T15:12:47.853-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137725,27.897485555555555,4
+Rating,RATE-1631,"Unplanned (Bug, Incident, Inquiry)",2025-01-25T09:00:51.126-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/138011,16.67873861111111,4
+Rating,RATE-1400,Level of Effort (LoE),2025-01-09T05:30:59.492-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135272,160.08653805555556,2
+Address-Tracking,ATP-2361,"Unplanned (Bug, Incident, Inquiry)",2025-01-21T12:48:11.680-0800,Unplanned,https://shippo.atlassian.net/rest/api/2/issue/136733,268.9620088888889,4
+Core Enablement,CET-509,Team Management (TM),2025-01-23T16:48:41.128-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136497,319.9828161111111,4
+Rating,RATE-1481,Carrier Compliance (Cc),2025-01-17T14:36:16.183-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136230,226.0085436111111,3
+Carrier Configurations,CFG-1007,"Unplanned (Bug, Incident, Inquiry)",2025-01-18T17:11:31.137-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137236,0.16381583333333333,3
+Label Refund Manifest,LABEL-1120,"Unplanned (Bug, Incident, Inquiry)",2025-01-07T09:07:21.798-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/123936,,2
+Carrier Configurations,CFG-1016,Carrier Compliance (Cc),2025-01-24T06:23:47.061-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/137570,66.63853555555556,4
+Rating,RATE-1578,Carrier Compliance (Cc),2025-01-17T13:31:09.254-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137285,21.591116666666668,3
+Reconciliation,RECON-738,Team Management (TM),2025-01-10T12:23:42.947-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/127058,,2
+Core Enablement,CET-510,Technical Investment (Tech Inv),2025-01-23T16:40:27.249-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136498,249.695245,4
+Rating,RATE-648,Carrier Compliance (Cc),2025-01-06T06:28:35.795-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/119942,332.4743461111111,2
+Reconciliation,RECON-1034,"Unplanned (Bug, Incident, Inquiry)",2025-01-06T14:15:27.336-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135820,95.21289305555555,2
+Address-Tracking,ATP-2363,"Unplanned (Bug, Incident, Inquiry)",2025-01-13T10:16:20.449-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136776,72.19965888888889,3
+Rating,RATE-1583,"Unplanned (Bug, Incident, Inquiry)",2025-01-17T13:14:14.365-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137377,0.6839197222222222,3
+Reconciliation,RECON-962,Feature - Product Enhancement,2025-01-06T09:05:48.901-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133208,261.05962111111114,2
+Label Refund Manifest,LABEL-1876,"Unplanned (Bug, Incident, Inquiry)",2025-01-24T05:27:59.499-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/133577,1195.9184227777778,4
+Rating,RATE-1545,"Unplanned (Bug, Incident, Inquiry)",2025-01-13T13:43:42.569-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136962,,3
+Address-Tracking,ATP-2339,Team Management (TM),2025-01-10T09:13:23.501-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/135711,169.6787263888889,2
+Reconciliation,RECON-696,Level of Effort (LoE),2025-01-15T07:50:43.775-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/126392,241.55191250000001,3
+Address-Tracking,ATP-2356,Team Management (TM),2025-01-17T09:32:48.007-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/136456,163.69256916666666,3
+Address-Tracking,ATP-2359,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T09:45:52.050-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136545,185.02535555555556,3
+Address-Tracking,ATP-2412,"Unplanned (Bug, Incident, Inquiry)",2025-01-23T11:12:22.097-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137674,33.93664805555556,4
+Rating,RATE-1457,Carrier Compliance (Cc),2025-01-03T16:33:01.166-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136010,,1
+Carrier Configurations,CFG-1009,"Unplanned (Bug, Incident, Inquiry)",2025-01-17T05:59:49.552-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137296,168.4616822222222,3
+Core Enablement,CET-515,Technical Investment (Tech Inv),2025-01-13T14:48:30.415-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136743,77.83537527777779,3
+Address-Tracking,ATP-2316,"Unplanned (Bug, Incident, Inquiry)",2025-01-06T07:58:17.274-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135166,96.9512663888889,2
+Label Refund Manifest,LABEL-2233,"Unplanned (Bug, Incident, Inquiry)",2025-01-15T08:56:50.390-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136878,46.00595722222222,3
+Rating,RATE-1566,Carrier Compliance (Cc),2025-01-17T09:39:38.929-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137185,18.687961944444446,3
+Address-Tracking,ATP-2353,Technical Investment (Tech Inv),2025-01-21T11:24:17.583-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136438,290.9585705555556,4
+Reconciliation,RECON-977,Feature - Product Enhancement,2025-01-07T09:09:08.895-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133290,95.76331027777778,2
+Rating,RATE-1326,"Unplanned (Bug, Incident, Inquiry)",2025-01-17T10:47:03.224-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134350,,3
+Core Enablement,CET-484,Technical Investment (Tech Inv),2025-01-09T12:54:48.615-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/136045,148.50203194444444,2
+Rating,RATE-1485,Carrier Compliance (Cc),2025-01-16T16:31:38.730-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136295,239.35475833333334,3
+Rating,RATE-1454,Technical Investment (Tech Inv),2025-01-14T12:08:14.534-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135978,266.71892055555554,3
+Label Refund Manifest,LABEL-1990,"Unplanned (Bug, Incident, Inquiry)",2025-01-02T04:51:42.105-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134617,232.5782313888889,1
+Label Refund Manifest,LABEL-2198,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T13:01:17.421-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136513,,3
+Rating,RATE-1585,Carrier Compliance (Cc),2025-01-22T06:52:24.404-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137391,112.68330388888889,4
+Rating,RATE-1560,Carrier Compliance (Cc),2025-01-16T11:10:47.138-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137145,17.300323055555555,3
+Reconciliation,RECON-958,Feature - Product Enhancement,2025-01-09T09:05:20.719-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133203,,2
+Address-Tracking,ATP-2297,Partner Commitment (Pc),2025-01-08T07:32:27.121-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/134752,615.66142,2
+Address-Tracking,ATP-2262,Partner Commitment (Pc),2025-01-21T11:25:40.338-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/134025,1027.741223611111,4
+Rating,RATE-1517,"Unplanned (Bug, Incident, Inquiry)",2025-01-10T10:26:30.995-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136617,16.549225555555555,2
+Rating,RATE-1530,Carrier Compliance (Cc),2025-01-17T16:01:43.352-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136731,43.14435194444444,3
+Rating,RATE-1345,"Unplanned (Bug, Incident, Inquiry)",2025-01-09T05:32:47.819-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/134635,662.8889405555556,2
+Core Enablement,CET-483,Technical Investment (Tech Inv),2025-01-10T05:36:32.206-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136033,162.64662388888888,2
+Rating,RATE-1619,Carrier Compliance (Cc),2025-01-24T13:46:53.055-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137881,1.5469441666666666,4
+Address-Tracking,ATP-2372,Partner Commitment (Pc),2025-01-24T07:10:34.599-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136989,191.09331083333333,4
+Address-Tracking,ATP-2344,"Unplanned (Bug, Incident, Inquiry)",2025-01-02T09:14:53.629-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135749,220.08697416666666,1
+Rating,RATE-1461,Team Management (TM),2025-01-16T08:11:12.201-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136037,306.8103613888889,3
+Rating,RATE-1515,"Unplanned (Bug, Incident, Inquiry)",2025-01-13T10:02:55.390-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136566,,3
+Address-Tracking,ATP-2048,Carrier Compliance (Cc),2025-01-09T09:38:49.025-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/130543,169.0494486111111,2
+Core Enablement,CET-402,Technical Investment (Tech Inv),2025-01-10T07:33:26.578-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/132323,839.3525594444445,2
+Label Refund Manifest,LABEL-2113,"Unplanned (Bug, Incident, Inquiry)",2025-01-09T13:13:22.217-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135159,,2
+Reconciliation,RECON-1077,Technical Investment (Tech Inv),2025-01-17T12:51:19.244-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137017,53.812172777777775,3
+Label Refund Manifest,LABEL-2160,"Unplanned (Bug, Incident, Inquiry)",2025-01-05T21:45:44.691-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136076,,2
+Label Refund Manifest,LABEL-2267,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T10:45:52.648-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137166,21.852191111111114,3
+Carrier Configurations,CFG-939,"Unplanned (Bug, Incident, Inquiry)",2025-01-03T14:26:18.801-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135059,361.682205,1
+Label Refund Manifest,LABEL-1986,"Unplanned (Bug, Incident, Inquiry)",2025-01-07T05:33:04.491-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134604,120.69201083333333,2
+Address-Tracking,ATP-1708,"Unplanned (Bug, Incident, Inquiry)",2025-01-17T11:14:48.053-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/124209,3187.3106177777777,3
+Label Refund Manifest,LABEL-1997,"Unplanned (Bug, Incident, Inquiry)",2024-12-31T04:58:15.000-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134737,291.30162027777783,1
+Reconciliation,RECON-1095,"Unplanned (Bug, Incident, Inquiry)",2025-01-21T12:04:35.499-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137572,,4
+Rating,RATE-1503,Carrier Compliance (Cc),2025-01-17T11:58:03.908-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136442,212.89621166666666,3
+Carrier Configurations,CFG-1004,"Unplanned (Bug, Incident, Inquiry)",2025-01-16T04:39:30.453-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137194,0.0015288888888888887,3
+Carrier Configurations,CFG-988,Partner Commitment (Pc),2025-01-23T13:50:38.535-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136245,151.06557222222224,4
+Carrier Configurations,CFG-929,Carrier Compliance (Cc),2025-01-10T04:12:11.626-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/134891,166.00197694444444,2
+Address-Tracking,ATP-2406,"Unplanned (Bug, Incident, Inquiry)",2025-01-21T11:26:52.314-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/137577,0.14643555555555557,4
+Reconciliation,RECON-1099,Team Management (TM),2025-01-23T09:08:22.765-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/137825,,4
+Rating,RATE-1511,Carrier Compliance (Cc),2025-01-13T16:42:27.087-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136530,73.75217472222224,3
+Rating,RATE-1506,Carrier Compliance (Cc),2025-01-17T13:51:58.601-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136446,194.0037311111111,3
+Address-Tracking,ATP-2362,"Unplanned (Bug, Incident, Inquiry)",2025-01-15T05:08:37.491-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/136772,111.05227805555556,3
+Rating,RATE-1523,Carrier Compliance (Cc),2025-01-16T21:28:58.503-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136686,155.08919972222222,3
+Rating,RATE-1478,Carrier Compliance (Cc),2025-01-17T15:09:56.520-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136221,231.36365583333333,3
+Rating,RATE-1508,Carrier Compliance (Cc),2025-01-17T15:27:36.315-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136448,214.88334166666667,3
+Reconciliation,RECON-954,Feature - Product Enhancement,2025-01-02T09:05:59.703-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/133190,692.400295,1
+Address-Tracking,ATP-2314,Partner Commitment (Pc),2025-01-21T11:25:10.367-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/135147,317.4910811111111,4
+Address-Tracking,ATP-2331,"Unplanned (Bug, Incident, Inquiry)",2025-01-08T07:43:54.585-0800,Bug,https://shippo.atlassian.net/rest/api/2/issue/135525,355.8834591666667,2
+Rating,RATE-1552,Carrier Compliance (Cc),2025-01-14T17:42:03.799-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137029,6.728492777777778,3
+Rating,RATE-1541,Carrier Compliance (Cc),2025-01-17T16:41:34.193-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136840,164.63698499999998,3
+Rating,RATE-1582,"Unplanned (Bug, Incident, Inquiry)",2025-01-17T10:47:44.848-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137362,,3
+Rating,RATE-1499,Carrier Compliance (Cc),2025-01-16T20:52:49.847-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/136393,221.93851222222222,3
+Rating,RATE-1579,Carrier Compliance (Cc),2025-01-17T13:44:50.560-0800,Task,https://shippo.atlassian.net/rest/api/2/issue/137289,,3
+Carrier Configurations,CFG-996,Carrier Compliance (Cc),2025-01-21T05:37:33.701-0800,Story,https://shippo.atlassian.net/rest/api/2/issue/136600,138.83830722222223,4

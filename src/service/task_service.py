@@ -2,7 +2,7 @@ from jira import JIRA
 from datetime import datetime
 from typing import List
 import polars as pl
-import plotly.express as px
+from src.adapters.secondary.jira.models import ProjectCategory
 
 
 class TaskService:
@@ -11,28 +11,28 @@ class TaskService:
         self.project = "project"
         self.engineering_work_taxonomy = "customfield_11173"
 
+
+    def get_issue(self, issue_id: str):
+        """Get details of a specific JIRA issue."""
+
+        issue = self.jira.issue(issue_id, expand="changelog")
+        return issue
+
     def get_all_projects(self) -> List[str]:
         """Get list of all projects from Jira."""
-        jql = 'category in ("core connectivity") and created >= -30d order by created DESC'
-        projects = set()
+        results = set()
 
         # Search for issues and extract unique project names
-        issues = self.jira.search_issues(
-            jql,
-            maxResults=1000,
-            fields=[
-                self.engineering_work_taxonomy,
-                "project",
-            ],  # Assuming project field is available
-        )
+        projects = self.jira.projects()
+        for project in projects:
+            if (
+                project.name not in projects
+                and hasattr(project, "projectCategory")
+                and project.projectCategory.id == ProjectCategory.CORE_CONNECTIVITY
+            ):
+                results.add(project.name)
 
-        for issue in issues:
-            if hasattr(issue.fields, self.engineering_work_taxonomy):
-                project = str(issue.fields.project.name)
-                if project:
-                    projects.add(project)
-
-        return sorted(list(project))
+        return sorted(list(results))
 
     def _fetch_issues(self, jql: str) -> list[JIRA.issue]:
         """Fetch issues from Jira using the provided JQL query."""
@@ -51,7 +51,8 @@ class TaskService:
                     "resolutiondate",
                     "status",
                     self.engineering_work_taxonomy,
-                ],
+                    "changelog",
+                ],expand="changelog"
             )
             if issues_batch == []:
                 break
@@ -90,6 +91,27 @@ class TaskService:
         issues = self._fetch_issues(jql)
 
         for issue in issues:
+            # Calculate lead time
+            lead_time_hours = None
+            if hasattr(issue, 'changelog') and issue.changelog:
+                in_progress_histories = []
+                done_histories = []
+
+                for history in issue.changelog.histories:
+                    for item in history.items:
+                        if item.field == 'status':
+                            if item.toString == 'In Progress':
+                                in_progress_histories.append(datetime.strptime(history.created, "%Y-%m-%dT%H:%M:%S.%f%z"))
+                            elif item.toString == 'Done':
+                                done_histories.append(datetime.strptime(history.created, "%Y-%m-%dT%H:%M:%S.%f%z"))
+
+
+
+                if in_progress_histories and done_histories:
+                    in_progress_date = min(in_progress_histories)
+                    done_date = max(done_histories)
+                    lead_time_hours = (done_date - in_progress_date).total_seconds() / 3600  # Convert to hours
+
             category = getattr(
                 issue.fields, self.engineering_work_taxonomy, "Uncategorized"
             )
@@ -101,6 +123,7 @@ class TaskService:
                     "resolved": issue.fields.resolutiondate,
                     "type": issue.fields.issuetype.name,
                     "url": issue.self,
+                    "lead_time_hours": lead_time_hours,  # Add lead time in days
                 }
             )
 
@@ -119,120 +142,3 @@ class TaskService:
             )
 
         return df.unique()
-
-    def visualize_project_composition(
-        self, df: pl.DataFrame, output_path: str = "project_composition.html"
-    ) -> None:
-        """
-        Create an interactive bar chart of project work composition.
-
-        Args:
-            df: DataFrame containing project work data
-            output_path: Path to save the visualization HTML file
-        """
-        if df.is_empty():
-            raise ValueError("No data available for visualization")
-
-        df = df.clone()
-
-        # Calculate composition percentages
-        composition = (
-            df.groupby(["project", "category", "week"])
-            .agg(pl.count().alias("count"))
-            .join(
-                df.groupby(["project", "week"]).agg(pl.count().alias("count_total")),
-                on=["project", "week"],
-            )
-            .with_columns(
-                (pl.col("count") / pl.col("count_total") * 100)
-                .round()
-                .alias("percentage")
-            )
-        ).sort("week")
-
-        # Create stacked bar chart
-        fig = (
-            px.bar(
-                composition,
-                x="project",
-                y="percentage",
-                color="category",
-                title="Engineering Work Taxonomy by project",
-                facet_col="week",
-                facet_col_wrap=1,
-                labels={
-                    "percentage": "Percentage of Work",
-                    "category": "Work Category",
-                    "project": "Project",
-                    "Week": "Week",
-                },
-                barmode="stack",
-                height=2000,
-                text="percentage",
-                color_discrete_sequence=px.colors.qualitative.Prism,
-            )
-            .update_layout(legend_traceorder="reversed")
-            .update_traces(texttemplate="%{text:.0f}%", textposition="inside")
-            .for_each_xaxis(lambda x: x.update(showticklabels=True))
-        )
-
-        fig.write_html(output_path)
-
-    def analyze_weekly_trends(
-        self, df: pl.DataFrame, output_path: str = "weekly_trends.html"
-    ) -> None:
-        """
-        Create an interactive line chart showing weekly work composition trends.
-
-        Args:
-            df: DataFrame containing project work data
-            output_path: Path to save the visualization HTML file
-        """
-        if df.is_empty():
-            raise ValueError("No data available for visualization")
-
-        df = df.clone()
-
-        composition = (
-            df.groupby(
-                [
-                    "week",
-                    "category",
-                ]
-            )
-            .agg(pl.count().alias("count"))
-            .join(df.groupby("week").agg(pl.count().alias("count_total")), on="week")
-            .with_columns(
-                (pl.col("count") / pl.col("count_total") * 100)
-                .round()
-                .alias("percentage")
-            )
-        ).sort("week")
-
-        fig = (
-            px.line(
-                composition,
-                x="week",
-                y="percentage",
-                color="category",
-                facet_col_wrap=2,
-                title="Weekly Work Composition Trends",
-                labels={
-                    "percentage": "Percentage of Issues",
-                    "week": "Week",
-                    "category": "Work Category",
-                },
-                text="percentage",
-                height=800,
-            ).update_traces(texttemplate="%{text:.0f}%")
-        ).update_xaxes(type="category")
-
-        fig.write_html(output_path)
-
-    def write_to_csv(
-        self,
-        df: pl.DataFrame,
-        output_path: str = "analysis_output/engineering_taxonomy.csv",
-    ) -> None:
-        """Write DataFrame to CSV file."""
-        df.write_csv(output_path)
