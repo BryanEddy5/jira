@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """CLI entry point for the metrics application providing JIRA and project
-analysis commands."""
+analysis commands.
+"""
 
 import typer
 

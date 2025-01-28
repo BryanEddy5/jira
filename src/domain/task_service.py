@@ -37,7 +37,6 @@ class TaskService:
 
         """
         issues = self.jira_adapter.search_issues(start_date, end_date, projects)
-        print(f"Found {len(issues)} issues")
 
         # Convert issues to IssueAnalytics domain models
         return [IssueAnalytics.from_issue(issue) for issue in issues]

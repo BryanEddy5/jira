@@ -25,6 +25,15 @@ class JiraAdapter:
             "",
         ]
 
+    def create_issue(self, fields: dict) -> Issue:
+        """Create a new JIRA issue."""
+        jira_issue = self.jira.create_issue(fields=fields)
+        return map_issue(jira_issue, self.engineering_work_taxonomy)
+
+    def delete_issue(self, issue_id: str) -> None:
+        """Delete a JIRA issue."""
+        self.jira.issue(issue_id).delete()
+
     def get_issue(self, issue_id: str) -> Issue:
         """Get details of a specific issue."""
         jira_issue = self.jira.issue(issue_id, expand="changelog")
@@ -61,8 +70,7 @@ class JiraAdapter:
         """
         if projects is None:
             projects = self.get_core_connectivity_projects_keys()
-        projects_keys = ','.join([project.key for project in projects])
-        print(f"Searching for issues in projects: {projects_keys}")
+        projects_keys = ",".join([project.key for project in projects])
 
         jql = (
             f"project in ({projects_keys}) "

@@ -1,6 +1,5 @@
-from jira import JIRA, Issue
-
-from adapters.secondary.jira import jira_factory
+from src.adapters.secondary.jira import jira_factory
+from src.adapters.secondary.jira.jira_adapter import Issue, JiraAdapter
 
 
 def test_create_jira_ticket() -> None:
@@ -9,19 +8,20 @@ def test_create_jira_ticket() -> None:
     jira = jira_factory.create()
 
     # Call the method
-    new_issue = jira.create_issue(
-        project="BB",
-        summary="BB Test Task",
-        description="test description",
-        issuetype={"name": "Task"},
-    )
+    fields = {
+        "project": "BB",
+        "summary": "Test Summary",
+        "description": "Test Description",
+        "issuetype": {"name": "Task"},
+    }
+    new_issue = jira.create_issue(fields=fields)
 
-    issue = jira.issue(new_issue.key)
+    issue = jira.get_issue(new_issue.key)
 
     # Assertions
-    assert isinstance(jira, JIRA)
+    assert isinstance(jira, JiraAdapter)
     assert isinstance(new_issue, Issue)
     assert new_issue.key == issue.key
     assert isinstance(issue, Issue)
-    assert issue.fields.issuetype.name == "Task"
-    issue.delete()
+    assert issue.issue_type == "Task"
+    jira.delete_issue(new_issue.key)

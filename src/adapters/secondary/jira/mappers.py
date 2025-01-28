@@ -64,7 +64,10 @@ def map_issue(jira_issue: JiraIssue, engineering_taxonomy_field: str) -> Issue:
         resolution_date=datetime.strptime(
             jira_issue.fields.resolutiondate,
             "%Y-%m-%dT%H:%M:%S.%f%z",
-        ),
+        )
+        if hasattr(jira_issue.fields, "resolutiondate")
+        and jira_issue.fields.resolutiondate
+        else None,
         status=jira_issue.fields.status.name,
         engineering_category=str(
             getattr(jira_issue.fields, engineering_taxonomy_field, "Uncategorized"),
