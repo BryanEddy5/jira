@@ -7,5 +7,6 @@
         "editor.defaultFormatter": "charliermarsh.ruff"
     },
     "python.analysis.extraPaths": ["./src"],
-    "python.defaultInterpreterPath": "/Users/bryaneddy/Library/Caches/pypoetry/virtualenvs/jira-automation-iCfpME8d-py3.11"
+    "python.defaultInterpreterPath": "/Users/bryaneddy/Library/Caches/pypoetry/virtualenvs/jira-automation-iCfpME8d-py3.11",
+    "cSpell.words": ["resolutiondate"]
 }
