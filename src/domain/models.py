@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from datetime import datetime
 from enum import StrEnum
+from typing import List
 
 
 class IssueType(StrEnum):
@@ -73,6 +74,16 @@ class Issue:
     def is_cancelled(self) -> bool:
         """Check if the issue is marked as won't do."""
         return self.status == IssueStatus.WONT_DO
+
+
+@dataclass
+class JiraPlan:
+    """Represents a collection of related Jira issues."""
+
+    root_issues: List[Issue]  # The original issues provided
+    parent_issues: List[Issue]  # Parent issues discovered
+    child_issues: List[Issue]  # Child issues discovered
+    jql: str  # The JQL query that can fetch all related issues
 
 
 @dataclass

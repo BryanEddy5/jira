@@ -9,7 +9,13 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 from src.adapters.secondary.jira.mappers import map_issue, map_project
-from src.adapters.secondary.jira.models import ProjectCategory
+from src.adapters.secondary.jira.models import (
+    JiraPlanRequest,
+    JiraPlanResponse,
+    ProjectCategory,
+    JiraFilter,
+)
+import json
 from src.domain.models import CreateIssueRequest, Issue, IssueStatus, IssueType, Project
 
 if TYPE_CHECKING:
@@ -110,6 +116,85 @@ class JiraAdapter:
         )
 
         return self._fetch_issues(jql)
+
+    def get_parent_issue(self, issue_id: str) -> str | None:
+        """Get the parent issue (epic or initiative) of a given issue."""
+        issue = self.jira.issue(issue_id, expand="parent")
+        parent_field = "parent"
+        if parent_field and hasattr(issue.fields, parent_field):
+            parent_key = getattr(issue.fields, parent_field)
+            if isinstance(parent_key, str) or hasattr(parent_key, "key"):
+                return parent_key
+        return None
+
+    def get_child_issues_keys(self, issue_id: str) -> set[str]:
+        """Get all child issues (stories, tasks, bugs) of a given issue."""
+        issue = self.jira.issue(issue_id, expand="issuelinks")
+        child_keys = set()
+        for issue.link in issue.fields.issuelinks:
+            if hasattr(issue.link, "outwardIssue"):
+                child_keys.add(issue.link.outwardIssue.key)
+            elif hasattr(issue.link, "inwardIssue"):
+                child_keys.add(issue.link.inwardIssue.key)
+
+        return child_keys
+
+    def get_account_id(self, email: str | None = None) -> str:
+        """Get the account ID for a user from their email address."""
+        if email is None:
+            return self.jira.current_user()
+        response = self.jira._session.get(
+            f"{self.jira.server_url}/rest/api/3/user/search", params={"query": email}
+        )
+        response.raise_for_status()
+        users = response.json()
+        if not users:
+            raise ValueError(f"No user found with email: {email}")
+        return users[0]["accountId"]
+
+    def get_project_id(self, project_key: str) -> int:
+        """Get the numeric ID of a project from its key."""
+        response = self.jira._session.get(
+            f"{self.jira.server_url}/rest/api/3/project/{project_key}"
+        )
+        response.raise_for_status()
+        data = response.json()
+        return int(data["id"])
+
+    def create_filter(self, name: str, jql: str, owner_account_id: str) -> JiraFilter:
+        """Create a Jira Filter using the Jira API."""
+        response = self.jira._session.post(
+            f"{self.jira.server_url}/rest/api/3/filter",
+            json={"name": name, "jql": jql, "sharePermissions": [{"type": "authenticated"}]},
+        )
+        response.raise_for_status()
+        data = response.json()
+        return JiraFilter(
+            id=str(data["id"]),
+            name=data["name"],
+            jql=data["jql"],
+            owner_account_id=data["owner"]["accountId"],
+        )
+
+    def create_jira_plan(self, request: JiraPlanRequest) -> JiraPlanResponse:
+        """Create a Jira Plan using the Jira API."""
+        response = self.jira._session.post(
+            f"{self.jira.server_url}/rest/api/3/plans/plan",
+            json={
+                "name": request.name,
+                "issueSources": request.issue_sources,
+                "scheduling": request.scheduling,
+                "leadAccountId": request.lead_account_id,
+                "permissions": request.permissions,
+                "exclusionRules": request.exclusion_rules,
+                "customFields": request.custom_fields,
+            },
+        )
+        response.raise_for_status()
+        plan_id = response.json()
+        return JiraPlanResponse(
+            id=plan_id, name=request.name, url=f"{self.jira.server_url}/jira/plans/{plan_id}"
+        )
 
     def _fetch_issues(self, jql: str) -> list[Issue]:
         """Fetch issues from Jira using the provided JQL query."""

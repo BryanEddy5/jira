@@ -38,6 +38,15 @@
             "args": ["jira", "get-issue", "ATP-1708"]
         },
         {
+            "name": "Debug Create Jira Plan",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/adapters/primary/cli/entry.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": ["jira", "create-plan","ATP-1984","ATP-2080","LABEL-1920", "--name", "Foo Bar Plan v2"]
+        },
+        {
             "name": "Debug With Input - Not Working",
             "type": "debugpy",
             "request": "launch",
