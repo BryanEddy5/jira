@@ -26,7 +26,7 @@ class TeamAnalysis:
         if not issue_data.is_empty():
             issue_data = issue_data.with_columns(
                 [
-                    pl.col("resolved").str.strptime(pl.Datetime).dt.week().alias("week"),
+                    (pl.col("resolved").str.strptime(pl.Datetime).dt.truncate("1w") + pl.duration(days=6)).dt.strftime("%Y-%m-%d").alias("week"),
                 ],
             )
         return issue_data.unique()

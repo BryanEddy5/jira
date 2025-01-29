@@ -52,7 +52,7 @@ def calculate_lead_time(status_history: list[StatusTransition]) -> float | None:
     done_dates = [t.timestamp for t in status_history if t.status == "Done"]
 
     if in_progress_dates and done_dates:
-        start_date = min(in_progress_dates) # get the earliest date
+        start_date = min(in_progress_dates)  # get the earliest date
         end_date = max(done_dates)  # get the latest date
         return (end_date - start_date).total_seconds() / 3600  # Convert to hours
 

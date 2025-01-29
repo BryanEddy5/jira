@@ -6,7 +6,7 @@ Provides JIRA and project analysis commands.
 
 import typer
 
-from src.adapters.primary.cli.jira.jira_commands import jira_app
+from src.adapters.primary.cli.jira_commands.jira_commands import jira_app
 from src.adapters.primary.cli.projects.analytics_commands import team_app
 
 app = typer.Typer()
