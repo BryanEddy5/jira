@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 from enum import StrEnum
 from typing import Dict, List, Optional, Union
+from pydantic import BaseModel
 
 @dataclass
 class JiraFilter:

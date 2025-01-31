@@ -1,7 +1,7 @@
 from datetime import datetime
 
 from src.adapters.secondary.jira.jira_adapter import JiraAdapter
-from src.domain.models import Issue, IssueAnalytics, Project
+from src.domain.models import CreateIssueRequest, Issue, IssueAnalytics, Project
 
 
 class TaskService:
@@ -11,9 +11,17 @@ class TaskService:
         """Initialize TaskService with a JIRA adapter."""
         self.jira_adapter = jira_adapter
 
+    def create_issue(self, create_issue_request: CreateIssueRequest) -> Issue:
+        """Create a new JIRA issue."""
+        return self.jira_adapter.create_issue(create_issue_request)
+
     def get_issue(self, issue_id: str) -> Issue:
         """Get details of a specific issue."""
         return self.jira_adapter.get_issue(issue_id)
+
+    def delete_issue(self, issue_id: str) -> None:
+        """Delete a JIRA issue."""
+        self.jira_adapter.delete_issue(issue_id)
 
     def get_core_connectivity_projects_keys(self) -> list[Project]:
         """Get list of all Core Connectivity projects."""

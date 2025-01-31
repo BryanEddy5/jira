@@ -7,6 +7,7 @@ from datetime import datetime, timedelta
 import pytz
 import typer
 
+from src.domain.models import CreateIssueRequest
 from src.adapters.secondary.jira import jira_factory
 from src.domain.task_service import TaskService
 from src.domain.jira_plan_service import JiraPlanService
@@ -27,14 +28,11 @@ def create(
     """Create a new JIRA issue."""
     if date is None:
         date = datetime.now(pytz.utc) + timedelta(weeks=1)
-    issue_dict = {
-        "project": project,
-        "summary": summary,
-        "description": description,
-        "issuetype": {"name": "Task"},
-        "duedate": date.strftime("%Y-%m-%d"),
-    }
-    _jira.create_issue(fields=issue_dict)
+
+    request = CreateIssueRequest(project_key=project, summary=summary, description=description, date=date)
+
+    issue = _task_service.create_issue(request)
+    print(f"Created issue: {issue.key}")
 
 
 @jira_app.command("list-projects")
@@ -56,10 +54,9 @@ def get_issue(issue_id: str) -> None:
 def rm(issue_ids: list[str]) -> None:
     """Delete one or more JIRA issues."""
     for issue_id in issue_ids:
-        issue = _jira.issue(issue_id)
-        if issue:
-            print(f"Deleted issue {issue_id}")
-            issue.delete()
+        print(f"Deleting issue: {issue_id}")
+        _task_service.delete_issue(issue_id)
+
 
 
 @jira_app.command()

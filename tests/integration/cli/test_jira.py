@@ -71,3 +71,41 @@ def test_create_plan() -> None:
     assert "Jira Plan created successfully:" in result.stdout
     assert f"Name: {plan_name}" in result.stdout
     assert "URL: https://shippo.atlassian.net/jira/plans/" in result.stdout
+
+
+@pytest.mark.integration
+def test_create_and_delete_issue() -> None:
+    """Test creating and then deleting a Jira issue."""
+    # Test data
+    summary = "Test Integration Issue"
+    description = "This is a test issue created by integration test"
+    project = "BB"  # Using default project from jira_commands.py
+
+    # Create issue
+    create_result = runner.invoke(
+        app,
+        ["jira", "create", summary, description, "--project", project],
+        catch_exceptions=False,
+    )
+    assert create_result.exit_code == 0
+
+    # Get the issue key from the query result (first line, third word)
+    issue_key = create_result.stdout.strip().split("\n")[0].split()[2]
+
+    # Verify issue exists and matches our data
+    get_result = runner.invoke(
+        app,
+        ["jira", "get-issue", issue_key],
+        catch_exceptions=False,
+    )
+    assert get_result.exit_code == 0
+    assert summary in get_result.stdout
+
+    # Delete the issue
+    delete_result = runner.invoke(
+        app,
+        ["jira", "rm", issue_key],
+        catch_exceptions=False,
+    )
+    assert delete_result.exit_code == 0
+    assert f"Deleting issue: {issue_key}" in delete_result.stdout

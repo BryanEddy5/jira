@@ -44,7 +44,7 @@
             "program": "${workspaceFolder}/src/adapters/primary/cli/entry.py",
             "console": "integratedTerminal",
             "justMyCode": false,
-            "args": ["jira", "create-plan","ATP-1984","ATP-2080","LABEL-1920", "--name", "Foo Bar Plan v2"]
+            "args": ["jira", "create-plan", "ATP-1984", "ATP-2080", "LABEL-1920", "--name", "Foo Bar Plan v2"]
         },
         {
             "name": "Debug With Input - Not Working",
@@ -53,7 +53,7 @@
             "program": "${workspaceFolder}/src/adapters/primary/cli/entry.py",
             "console": "integratedTerminal",
             "justMyCode": false,
-            "args": ["${input:args}"]
+            "args": ["jira", "create", "foo", "bar"]
         }
     ],
     "inputs": [

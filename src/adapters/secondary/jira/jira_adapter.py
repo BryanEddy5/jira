@@ -60,6 +60,7 @@ class JiraAdapter:
             "summary": request.summary,
             "description": request.description,
             "issuetype": {"name": request.issue_type.value},
+            "duedate": request.date.strftime("%Y-%m-%d"),
         }
         jira_issue = self.jira.create_issue(fields=fields)
         return map_issue(jira_issue, self.engineering_work_taxonomy)
@@ -131,11 +132,11 @@ class JiraAdapter:
         """Get all child issues (stories, tasks, bugs) of a given issue."""
         issue = self.jira.issue(issue_id, expand="issuelinks")
         child_keys = set()
-        for issue.link in issue.fields.issuelinks:
-            if hasattr(issue.link, "outwardIssue"):
-                child_keys.add(issue.link.outwardIssue.key)
-            elif hasattr(issue.link, "inwardIssue"):
-                child_keys.add(issue.link.inwardIssue.key)
+        for issue_link in issue.fields.issuelinks:
+            if hasattr(issue_link, "outwardIssue"):
+                child_keys.add(issue_link.outwardIssue.key)
+            elif hasattr(issue_link, "inwardIssue"):
+                child_keys.add(issue_link.inwardIssue.key)
 
         return child_keys
 

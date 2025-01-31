@@ -1,7 +1,10 @@
 from dataclasses import dataclass
-from datetime import datetime
+from datetime import datetime, timedelta
 from enum import StrEnum
-from typing import List
+
+
+import pytz
+from pydantic import BaseModel, ConfigDict, Field
 
 
 class IssueType(StrEnum):
@@ -39,14 +42,16 @@ class StatusTransition:
     timestamp: datetime
 
 
-@dataclass
-class CreateIssueRequest:
+class CreateIssueRequest(BaseModel):
     """Request model for creating a new issue."""
 
-    project_key: str
+    model_config = ConfigDict(frozen=True)
+
+    project_key: str = "BB"
     summary: str
     description: str
-    issue_type: IssueType = IssueType.TASK
+    issue_type: IssueType = Field(IssueType.TASK)
+    date: datetime = Field(default=datetime.now(pytz.utc) + timedelta(weeks=1))
 
 
 @dataclass
@@ -80,9 +85,9 @@ class Issue:
 class JiraPlan:
     """Represents a collection of related Jira issues."""
 
-    root_issues: List[Issue]  # The original issues provided
-    parent_issues: List[Issue]  # Parent issues discovered
-    child_issues: List[Issue]  # Child issues discovered
+    root_issues: list[Issue]  # The original issues provided
+    parent_issues: list[Issue]  # Parent issues discovered
+    child_issues: list[Issue]  # Child issues discovered
     jql: str  # The JQL query that can fetch all related issues
 
 
